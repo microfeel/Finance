@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MicroFeel.Finance
+namespace MicroFeel.Finance.Models
 {
     /// <summary>
     /// 通用科目

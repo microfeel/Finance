@@ -4,574 +4,18 @@
         <name>MicroFeel.Finance</name>
     </assembly>
     <members>
-        <member name="T:MicroFeel.Finance.Account">
-            <summary>
-            通用科目
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.Id">
-            <summary>
-            科目Id
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.Number">
-            <summary>
-            科目代码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.Name">
-            <summary>
-            科目名称
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.Flevel">
-            <summary>
-            科目级别
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.IsDetail">
-            <summary>
-            是否末级科目
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.ParentId">
-            <summary>
-            父科目Id
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.RootId">
-            <summary>
-            根科目Id
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.IsCash">
-            <summary>
-            是现金科目
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.IsBank">
-            <summary>
-            是银行科目
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.Message">
-            <summary>
-            科目消息
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Account.ItemClasses">
-            <summary>
-            核算项Id集合
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.Customer">
-            <summary>
-            客户
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Customer.FItemId">
-            <summary>
-            核算项
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Customer.Name">
-            <summary>
-            名称
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Customer.Number">
-            <summary>
-            编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Customer.ShortNumber">
-            <summary>
-            短编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Customer.PhoneNumber">
-            <summary>
-            电话号码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Customer.Address">
-            <summary>
-            地址
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Customer.Memo">
-            <summary>
-            备注
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Department.FItemId">
-            <summary>
-            核算项
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Department.Name">
-            <summary>
-            名称
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Department.Number">
-            <summary>
-            编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Department.ShortNumber">
-            <summary>
-            短编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Department.PhoneNumber">
-            <summary>
-            电话号码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Department.FaxNumber">
-            <summary>
-            传真
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Department.ParentNumber">
-            <summary>
-            上级部门编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Department.IsWorkShop">
-            <summary>
-            是门店
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Department.Memo">
-            <summary>
-            备注
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.Emp">
-            <summary>
-            通用传输对象
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.FItemId">
-            <summary>
-            核算项
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.Name">
-            <summary>
-            名称
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.Number">
-            <summary>
-            编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.ShortNumber">
-            <summary>
-            短编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.PhoneNumber">
-            <summary>
-            电话号码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.DepartmentNumber">
-            <summary>
-            部门编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.Email">
-            <summary>
-            电子邮件
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.Address">
-            <summary>
-            家庭住址
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.Sex">
-            <summary>
-            性别:男,女,未知
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.Birthday">
-            <summary>
-            生日
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.CardID">
-            <summary>
-            身份证号
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Emp.Memo">
-            <summary>
-            备注
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.Item">
-            <summary>
-            通用核算项
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Item.ItemId">
-            <summary>
-            核算项
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Item.ItemClassId">
-            <summary>
-            核算项类型ID
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Item.Name">
-            <summary>
-            名称
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Item.Number">
-            <summary>
-            编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Item.ShortNumber">
-            <summary>
-            短编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Item.Memo">
-            <summary>
-            备注
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.Supplier">
-            <summary>
-            客户
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Supplier.FItemId">
-            <summary>
-            核算项
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Supplier.Name">
-            <summary>
-            名称
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Supplier.Number">
-            <summary>
-            编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Supplier.ShortNumber">
-            <summary>
-            短编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Supplier.PhoneNumber">
-            <summary>
-            电话号码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Supplier.Memo">
-            <summary>
-            备注
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.Voucher">
-            <summary>
-            凭证回执
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Voucher.Id">
-            <summary>
-            凭证内码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Voucher.GroupId">
-            <summary>
-            凭证字id
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Voucher.Year">
-            <summary>
-            会计年度
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Voucher.Period">
-            <summary>
-            会计期间
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Voucher.Date">
-            <summary>
-            凭证时间
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Voucher.Number">
-            <summary>
-            凭证编号
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Voucher.Reference">
-            <summary>
-            业务编码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.Voucher.IsNew">
-            <summary>
-            是否是新建数据
-            </summary>
-        </member>
-        <member name="M:MicroFeel.Finance.Voucher.ToString">
-            <summary>
-            重载字符串表达
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:MicroFeel.Finance.VoucherEntryTemplate">
-            <summary>
-            凭证模板分录
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.EntryId">
-            <summary>
-            分录序号
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.Explanation">
-            <summary>
-            摘要
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.AccountId">
-            <summary>
-            科目Id
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.DetailId">
-            <summary>
-            详细Id
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.CurrencyId">
-            <summary>
-            币别内码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.ExchangeRate">
-            <summary>
-            汇率
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.Dc">
-            <summary>
-            余额方向
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.AmountFor">
-            <summary>
-            原币金额
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.Amount">
-            <summary>
-            本币金额
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.Quantity">
-            <summary>
-            数量
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.MeasureUnitId">
-            <summary>
-            计量单位内码
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.UnitPrice">
-            <summary>
-            单价
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherEntryTemplate.ItemClasses">
-            <summary>
-            辅助核算类型
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.VoucherInfo">
-            <summary>
-            凭证信息
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherInfo.VoucherParams">
-            <summary>
-            凭证参数
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherInfo.Explanation">
-            <summary>
-            凭证主表摘要,一般不存储数据
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherInfo.Reference">
-            <summary>
-            参考信息
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherInfo.Preparer">
-            <summary>
-            制单人
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherInfo.GroupID">
-            <summary>
-            凭证字
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherInfo.Date">
-            <summary>
-            凭证时间
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherInfo.TransDate">
-            <summary>
-            业务时间
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherInfo.ObjectName">
-            <summary>
-            子系统
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherInfo.Parameter">
-            <summary>
-            参数
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.VoucherParm">
-            <summary>
-            凭证参数
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParm.ItemDict">
-            <summary>
-            核算类别，核算编号(Number)
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParm.Quantity">
-            <summary>
-            数量
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParm.UnitPrice">
-            <summary>
-            单价
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParm.MeasureUnit">
-            <summary>
-            单位名称
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParm.Amount">
-            <summary>
-            金额
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParm.Account">
-            <summary>
-            借方科目
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParm.Account2">
-            <summary>
-            贷方科目
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParm.FDC">
-            <summary>
-            0贷方，1借方(此数据应该读取 T_Account表中的FDC）
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParm.Explanation">
-            <summary>
-            摘要
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.VoucherParmEntry">
-            <summary>
-            添加凭证参数
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParmEntry.Type">
-            <summary>
-            类型
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherParmEntry.VoucherParms">
-            <summary>
-            凭证分录参数
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.VoucherTemplate">
-            <summary>
-            通用凭证模板
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherTemplate.Id">
-            <summary>
-            模板ID
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherTemplate.Name">
-            <summary>
-            模板名称
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherTemplate.TypeId">
-            <summary>
-            模板类型ID
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherTemplate.GroupId">
-            <summary>
-            凭证字
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherTemplate.Reference">
-            <summary>
-            参考信息
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherTemplate.Attachments">
-            <summary>
-            附件张数
-            </summary>
-        </member>
-        <member name="P:MicroFeel.Finance.VoucherTemplate.VoucherEntryTemplates">
-            <summary>
-            模板明细
-            </summary>
-        </member>
         <member name="T:MicroFeel.Finance.IFinanceService">
             <summary>
             财务API
             </summary>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddCustomer(MicroFeel.Finance.Customer)">
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.AddCustomer(MicroFeel.Finance.Models.Customer)">
             <summary>
             添加客户核算项
             </summary>
             <param name="customer">通用客户对象</param>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddCustomer(MicroFeel.Finance.Customer,System.String,System.Object[])">
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.AddCustomer(MicroFeel.Finance.Models.Customer,System.String,System.Object[])">
             <summary>
             添加客户核算项
             </summary>
@@ -580,19 +24,19 @@
             <param name="parameters">实际参数</param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddDepartment(MicroFeel.Finance.Department)">
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.AddDepartment(MicroFeel.Finance.Models.Department)">
             <summary>
             添加部门核算项
             </summary>
             <param name="dep">通用部门对象</param>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddEmployee(MicroFeel.Finance.Emp)">
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.AddEmployee(MicroFeel.Finance.Models.Emp)">
             <summary>
             添加职员核算项
             </summary>
             <param name="emp">通用职员对象</param>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddEmployee(MicroFeel.Finance.Emp,System.String,System.Object[])">
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.AddEmployee(MicroFeel.Finance.Models.Emp,System.String,System.Object[])">
             <summary>
             添加职员核算项
             </summary>
@@ -601,25 +45,25 @@
             <param name="parameters">实际参数</param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddSupplier(MicroFeel.Finance.Supplier)">
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.AddSupplier(MicroFeel.Finance.Models.Supplier)">
             <summary>
             添加供应商核算项
             </summary>
             <param name="supplier">通用供应商对象</param>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddMaterial(MicroFeel.Finance.Material)">
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.AddMaterial(MicroFeel.Finance.Models.Material)">
             <summary>
             添加物料核算项
             </summary>
             <param name="material">通用材料对象</param>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddItem(MicroFeel.Finance.Item)">
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.AddItem(MicroFeel.Finance.Models.Item)">
             <summary>
             添加通用核算项
             </summary>
             <param name="item">通用核算对象</param>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddVoucher(System.Collections.Generic.IList{MicroFeel.Finance.VoucherParmEntry},System.String,System.String,System.String,System.Int32,System.DateTime,System.DateTime,System.String,System.String)">
+        <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.AddVoucher(System.Collections.Generic.IList{MicroFeel.Finance.Models.VoucherParmEntry},System.String,System.String,System.String,System.Int32,System.DateTime,System.DateTime,System.String,System.String)">
             <summary>
             添加凭证
             </summary>
@@ -633,31 +77,587 @@
             <param name="objectName">对象名称</param>
             <param name="parameter">参数</param>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.AddVoucher(MicroFeel.Finance.VoucherInfo)">
+        <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.AddVoucher(MicroFeel.Finance.Models.VoucherInfo)">
             <summary>
             添加凭证
             </summary>
             <param name="voucherInfo">凭证信息</param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.GetVoucherTemplate(System.Collections.Generic.IEnumerable{System.String})">
+        <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.GetVoucherTemplate(System.Collections.Generic.IEnumerable{System.String})">
             <summary>
             获取凭证模板
             </summary>
             <param name="tempTypeNames">模板类型名称</param>
             <returns>模板数据</returns>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.GetVoucherTemplate">
+        <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.GetVoucherTemplate">
             <summary>
             获取所有凭证模板
             </summary>
             <returns>模板数据</returns>
         </member>
-        <member name="M:MicroFeel.Finance.IFinanceService.GetAccount">
+        <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.GetAccount">
             <summary>
             获取系统科目
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Account">
+            <summary>
+            通用科目
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.Id">
+            <summary>
+            科目Id
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.Number">
+            <summary>
+            科目代码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.Name">
+            <summary>
+            科目名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.Flevel">
+            <summary>
+            科目级别
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.IsDetail">
+            <summary>
+            是否末级科目
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.ParentId">
+            <summary>
+            父科目Id
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.RootId">
+            <summary>
+            根科目Id
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.IsCash">
+            <summary>
+            是现金科目
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.IsBank">
+            <summary>
+            是银行科目
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.Message">
+            <summary>
+            科目消息
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Account.ItemClasses">
+            <summary>
+            核算项Id集合
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Customer">
+            <summary>
+            客户
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Customer.FItemId">
+            <summary>
+            核算项
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Customer.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Customer.Number">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Customer.ShortNumber">
+            <summary>
+            短编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Customer.PhoneNumber">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Customer.Address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Customer.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Department.FItemId">
+            <summary>
+            核算项
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Department.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Department.Number">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Department.ShortNumber">
+            <summary>
+            短编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Department.PhoneNumber">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Department.FaxNumber">
+            <summary>
+            传真
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Department.ParentNumber">
+            <summary>
+            上级部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Department.IsWorkShop">
+            <summary>
+            是门店
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Department.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Emp">
+            <summary>
+            通用传输对象
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.FItemId">
+            <summary>
+            核算项
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.Number">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.ShortNumber">
+            <summary>
+            短编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.PhoneNumber">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.DepartmentNumber">
+            <summary>
+            部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.Email">
+            <summary>
+            电子邮件
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.Address">
+            <summary>
+            家庭住址
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.Sex">
+            <summary>
+            性别:男,女,未知
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.Birthday">
+            <summary>
+            生日
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.CardID">
+            <summary>
+            身份证号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Emp.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Item">
+            <summary>
+            通用核算项
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Item.ItemId">
+            <summary>
+            核算项
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Item.ItemClassId">
+            <summary>
+            核算项类型ID
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Item.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Item.Number">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Item.ShortNumber">
+            <summary>
+            短编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Item.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Supplier">
+            <summary>
+            客户
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Supplier.FItemId">
+            <summary>
+            核算项
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Supplier.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Supplier.Number">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Supplier.ShortNumber">
+            <summary>
+            短编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Supplier.PhoneNumber">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Supplier.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Voucher">
+            <summary>
+            凭证回执
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Voucher.Id">
+            <summary>
+            凭证内码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Voucher.GroupId">
+            <summary>
+            凭证字id
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Voucher.Year">
+            <summary>
+            会计年度
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Voucher.Period">
+            <summary>
+            会计期间
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Voucher.Date">
+            <summary>
+            凭证时间
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Voucher.Number">
+            <summary>
+            凭证编号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Voucher.Reference">
+            <summary>
+            业务编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Voucher.IsNew">
+            <summary>
+            是否是新建数据
+            </summary>
+        </member>
+        <member name="M:MicroFeel.Finance.Models.Voucher.ToString">
+            <summary>
+            重载字符串表达
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.VoucherEntryTemplate">
+            <summary>
+            凭证模板分录
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.EntryId">
+            <summary>
+            分录序号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.Explanation">
+            <summary>
+            摘要
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.AccountId">
+            <summary>
+            科目Id
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.DetailId">
+            <summary>
+            详细Id
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.CurrencyId">
+            <summary>
+            币别内码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.ExchangeRate">
+            <summary>
+            汇率
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.Dc">
+            <summary>
+            余额方向
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.AmountFor">
+            <summary>
+            原币金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.Amount">
+            <summary>
+            本币金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.MeasureUnitId">
+            <summary>
+            计量单位内码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.UnitPrice">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherEntryTemplate.ItemClasses">
+            <summary>
+            辅助核算类型
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.VoucherInfo">
+            <summary>
+            凭证信息
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherInfo.VoucherParams">
+            <summary>
+            凭证参数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherInfo.Explanation">
+            <summary>
+            凭证主表摘要,一般不存储数据
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherInfo.Reference">
+            <summary>
+            参考信息
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherInfo.Preparer">
+            <summary>
+            制单人
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherInfo.GroupID">
+            <summary>
+            凭证字
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherInfo.Date">
+            <summary>
+            凭证时间
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherInfo.TransDate">
+            <summary>
+            业务时间
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherInfo.ObjectName">
+            <summary>
+            子系统
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherInfo.Parameter">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.VoucherParm">
+            <summary>
+            凭证参数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParm.ItemDict">
+            <summary>
+            核算类别，核算编号(Number)
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParm.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParm.UnitPrice">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParm.MeasureUnit">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParm.Amount">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParm.Account">
+            <summary>
+            借方科目
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParm.Account2">
+            <summary>
+            贷方科目
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParm.FDC">
+            <summary>
+            0贷方，1借方(此数据应该读取 T_Account表中的FDC）
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParm.Explanation">
+            <summary>
+            摘要
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.VoucherParmEntry">
+            <summary>
+            添加凭证参数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParmEntry.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherParmEntry.VoucherParms">
+            <summary>
+            凭证分录参数
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.VoucherTemplate">
+            <summary>
+            通用凭证模板
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherTemplate.Id">
+            <summary>
+            模板ID
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherTemplate.Name">
+            <summary>
+            模板名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherTemplate.TypeId">
+            <summary>
+            模板类型ID
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherTemplate.GroupId">
+            <summary>
+            凭证字
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherTemplate.Reference">
+            <summary>
+            参考信息
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherTemplate.Attachments">
+            <summary>
+            附件张数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.VoucherTemplate.VoucherEntryTemplates">
+            <summary>
+            模板明细
+            </summary>
         </member>
     </members>
 </doc>

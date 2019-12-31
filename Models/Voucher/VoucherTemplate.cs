@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicroFeel.Finance
+namespace MicroFeel.Finance.Models
 {
     /// <summary>
     /// 通用凭证模板

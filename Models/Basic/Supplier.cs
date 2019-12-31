@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MicroFeel.Finance
+﻿namespace MicroFeel.Finance.Models
 {
     /// <summary>
-    /// 通用核算项
+    /// 客户
     /// </summary>
-    public class Item
+    public class Supplier
     {
         /// <summary>
         /// 核算项
         /// </summary>
-        public int ItemId { get; set; }
-        /// <summary>
-        /// 核算项类型ID
-        /// </summary>
-        public int ItemClassId { get; set; }
+        public int FItemId { get; set; }
         /// <summary>
         /// 名称
         /// </summary>
@@ -29,6 +21,10 @@ namespace MicroFeel.Finance
         /// 短编码
         /// </summary>
         public string ShortNumber { get; set; }
+        /// <summary>
+        /// 电话号码
+        /// </summary>
+        public string PhoneNumber { get; set; }
         /// <summary>
         /// 备注
         /// </summary>

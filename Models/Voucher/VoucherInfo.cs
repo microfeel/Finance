@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MicroFeel.Finance
+namespace MicroFeel.Finance.Models
 {
     /// <summary>
     /// 凭证信息

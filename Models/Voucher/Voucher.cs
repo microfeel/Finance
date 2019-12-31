@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MicroFeel.Finance
+namespace MicroFeel.Finance.Models
 {
     /// <summary>
     /// 凭证回执

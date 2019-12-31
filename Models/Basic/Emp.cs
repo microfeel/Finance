@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace MicroFeel.Finance
+namespace MicroFeel.Finance.Models
 {
     /// <summary>
-    /// 客户
+    /// 通用传输对象
     /// </summary>
-    public class Customer
+    public class Emp
     {
         /// <summary>
         /// 核算项
@@ -30,9 +28,29 @@ namespace MicroFeel.Finance
         /// </summary>
         public string PhoneNumber { get; set; }
         /// <summary>
-        /// 地址
+        /// 部门编码
+        /// </summary>
+        public string DepartmentNumber { get; set; }
+        /// <summary>
+        /// 电子邮件
+        /// </summary>
+        public string Email { get; set; }
+        /// <summary>
+        /// 家庭住址
         /// </summary>
         public string Address { get; set; }
+        /// <summary>
+        /// 性别:男,女,未知
+        /// </summary>
+        public string Sex { get; set; } = "未知";
+        /// <summary>
+        /// 生日
+        /// </summary>
+        public DateTime? Birthday { get; set; }
+        /// <summary>
+        /// 身份证号
+        /// </summary>
+        public string CardID { get; set; }
         /// <summary>
         /// 备注
         /// </summary>

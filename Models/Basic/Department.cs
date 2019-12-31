@@ -1,9 +1,6 @@
-﻿namespace MicroFeel.Finance
+﻿namespace MicroFeel.Finance.Models
 {
-    /// <summary>
-    /// 客户
-    /// </summary>
-    public class Supplier
+    public class Department
     {
         /// <summary>
         /// 核算项
@@ -25,6 +22,18 @@
         /// 电话号码
         /// </summary>
         public string PhoneNumber { get; set; }
+        /// <summary>
+        /// 传真
+        /// </summary>
+        public string FaxNumber { get; set; }
+        /// <summary>
+        /// 上级部门编码
+        /// </summary>
+        public string ParentNumber { get; set; }
+        /// <summary>
+        /// 是门店
+        /// </summary>
+        public bool IsWorkShop { get; set; } = false;
         /// <summary>
         /// 备注
         /// </summary>
