@@ -80,7 +80,7 @@
             </summary>
             <returns>交易号</returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IPlatformService.Get_OrderStatusAsync">
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatformService.GetOrderStatusAsync">
             <summary>
             获取应用订单状态
             </summary>
@@ -92,7 +92,7 @@
             </summary>
             <returns>数据源配置</returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IPlatformService.Batch_get_DatasourceAsync">
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatformService.GetBatchDatasourceAsync">
             <summary>
             批量获取数据源配置
             </summary>
