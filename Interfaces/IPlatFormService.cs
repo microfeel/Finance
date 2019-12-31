@@ -9,7 +9,7 @@ namespace MicroFeel.Finance.Interfaces
     /// <summary>
     /// 平台级别服务
     /// </summary>
-    public interface IPlatFormService : IDisposable
+    public interface IPlatformService : IDisposable
     {
         /// <summary>
         /// 获取Token
