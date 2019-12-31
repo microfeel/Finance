@@ -63,36 +63,36 @@
             </summary>
             <param name="item">通用核算对象</param>
         </member>
-        <member name="T:MicroFeel.Finance.Interfaces.IPlatFormService">
+        <member name="T:MicroFeel.Finance.Interfaces.IPlatformService">
             <summary>
             平台级别服务
             </summary>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.TokenAsync">
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatformService.TokenAsync">
             <summary>
             获取Token
             </summary>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.TradeidAsync">
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatformService.TradeidAsync">
             <summary>
             获取交易号
             </summary>
             <returns>交易号</returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.Get_OrderStatusAsync">
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatformService.Get_OrderStatusAsync">
             <summary>
             获取应用订单状态
             </summary>
             <returns>订单状态</returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.Get_DatasourceAsync">
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatformService.Get_DatasourceAsync">
             <summary>
             获取数据源配置
             </summary>
             <returns>数据源配置</returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.Batch_get_DatasourceAsync">
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatformService.Batch_get_DatasourceAsync">
             <summary>
             批量获取数据源配置
             </summary>
