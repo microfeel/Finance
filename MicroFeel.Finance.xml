@@ -63,6 +63,46 @@
             </summary>
             <param name="item">通用核算对象</param>
         </member>
+        <member name="T:MicroFeel.Finance.Interfaces.IPlatFormService">
+            <summary>
+            平台级别服务
+            </summary>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.TokenAsync">
+            <summary>
+            获取Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.TradeidAsync">
+            <summary>
+            获取交易号
+            </summary>
+            <returns>交易号</returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.Get_OrderStatusAsync">
+            <summary>
+            获取应用订单状态
+            </summary>
+            <returns>订单状态</returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.Get_DatasourceAsync">
+            <summary>
+            获取数据源配置
+            </summary>
+            <returns>数据源配置</returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IPlatFormService.Batch_get_DatasourceAsync">
+            <summary>
+            批量获取数据源配置
+            </summary>
+            <returns>数据源配置</returns>
+        </member>
+        <member name="T:MicroFeel.Finance.Interfaces.IStockService">
+            <summary>
+            出入库服务接口
+            </summary>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.AddVoucher(System.Collections.Generic.IList{MicroFeel.Finance.Models.VoucherParmEntry},System.String,System.String,System.String,System.Int32,System.DateTime,System.DateTime,System.String,System.String)">
             <summary>
             添加凭证
@@ -381,6 +421,144 @@
         <member name="P:MicroFeel.Finance.Models.Supplier.Memo">
             <summary>
             备注
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.ModelExtensions">
+            <summary>
+            实体扩展
+            </summary>
+        </member>
+        <member name="M:MicroFeel.Finance.Models.ModelExtensions.To``1(System.Object)">
+            <summary>
+            实体转换
+            </summary>
+            <typeparam name="TModel"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Models.ModelExtensions.To``1(System.Object,System.Action{``0})">
+            <summary>
+            实体转换
+            </summary>
+            <remarks>指定属性进行赋值，一般是因为两个对象的属性名称不同所致，只需要指定不同的属性即可，相同的属性会完成自动赋值</remarks>
+            <typeparam name="TModel"></typeparam>
+            <param name="obj"></param>
+            <param name="acModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Datasource">
+            <summary>
+            数据源
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Datasource.Sequence">
+            <summary>
+            数据源序号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Datasource.SystemInfo">
+            <summary>
+            系统对象
+            </summary> 
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Datasource.Db">
+            <summary>
+            数据库对象
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Db.DbType">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Db.DbHost">
+            <summary>
+            数据库地址
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Db.DbScheme">
+            <summary>
+            数据库账套
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.IPlatformEntity">
+            <summary>
+            平台实体接口
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.User.User_id">
+            <summary>
+            操作员编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OrderStatus.Version">
+            <summary>
+            应用版本
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OrderStatus.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OrderStatus.ExpirationTime">
+            <summary>
+            到期时间
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SystemInfo.SysHost">
+            <summary>
+            	U8地址
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SystemInfo.SysId">
+            <summary>
+            U8系统ID
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Token">
+            <summary>
+            API令牌
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Token.AppKey">
+            <summary>
+            应用程序appkey
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Token.ExpiresIn">
+            <summary>
+            过期时间(秒)
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Token.Id">
+            <summary>
+            令牌Id
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Trade">
+            <summary>
+            订单
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Trade.Id">
+            <summary>
+            订单Id
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Stock">
+            <summary>
+            出入库实体
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Stock.StockDetials">
+            <summary>
+            明细
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.StockDetial">
+            <summary>
+            出入库实体明细
             </summary>
         </member>
         <member name="T:MicroFeel.Finance.Models.Voucher">
