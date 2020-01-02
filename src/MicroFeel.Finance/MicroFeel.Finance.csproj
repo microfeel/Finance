@@ -27,4 +27,8 @@
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'"> 
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\ModelExtensions.cs" />
+  </ItemGroup>
+
 </Project>

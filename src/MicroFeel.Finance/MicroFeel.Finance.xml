@@ -4,6 +4,90 @@
         <name>MicroFeel.Finance</name>
     </assembly>
     <members>
+        <member name="T:MicroFeel.Finance.FinancialAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.FinancialPathAttribute">
+            <summary>
+            财务请求特性
+            </summary>
+        </member>
+        <member name="M:MicroFeel.Finance.FinancialPathAttribute.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path">请求路径（不包含action）</param>
+        </member>
+        <member name="P:MicroFeel.Finance.FinancialPathAttribute.Path">
+            <summary>
+            请求路径（不包含action）
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.FinancialActionAttribute">
+            <summary>
+            财务请求特性
+            </summary>
+        </member>
+        <member name="M:MicroFeel.Finance.FinancialActionAttribute.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="action"> action </param>
+        </member>
+        <member name="P:MicroFeel.Finance.FinancialActionAttribute.Action">
+            <summary>
+            action
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.FinancialExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MicroFeel.Finance.FinancialExtensions.To``1(System.Object)">
+            <summary>
+            实体转换
+            </summary>
+            <typeparam name="TModel"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.FinancialExtensions.To``1(System.Object,System.Action{``0},System.Boolean)">
+            <summary>
+            实体转换
+            </summary>
+            <remarks>指定属性进行赋值，一般是因为两个对象的属性名称不同所致，只需要指定不同的属性即可，相同的属性会完成自动赋值</remarks>
+            <typeparam name="TModel"></typeparam>
+            <param name="obj"></param>
+            <param name="acModel"></param>
+            <param name="autoAssign">自动赋值，默认true</param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.FinancialExtensions.ToAttrString``1(System.Enum)">
+            <summary>
+            获取特性值
+            </summary>
+            <typeparam name="TAttrbute"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.FinancialExtensions.ToAttrString(System.Enum)">
+            <summary>
+            获取特性值
+            </summary>
+            <typeparam name="TAttrbute"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.FinancialExtensions.ToDescriptionString(System.Enum)">
+            <summary>
+            获取特性值
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
         <member name="T:MicroFeel.Finance.IFinanceService">
             <summary>
             财务API
@@ -422,29 +506,6 @@
             <summary>
             备注
             </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.Models.ModelExtensions">
-            <summary>
-            实体扩展
-            </summary>
-        </member>
-        <member name="M:MicroFeel.Finance.Models.ModelExtensions.To``1(System.Object)">
-            <summary>
-            实体转换
-            </summary>
-            <typeparam name="TModel"></typeparam>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MicroFeel.Finance.Models.ModelExtensions.To``1(System.Object,System.Action{``0})">
-            <summary>
-            实体转换
-            </summary>
-            <remarks>指定属性进行赋值，一般是因为两个对象的属性名称不同所致，只需要指定不同的属性即可，相同的属性会完成自动赋值</remarks>
-            <typeparam name="TModel"></typeparam>
-            <param name="obj"></param>
-            <param name="acModel"></param>
-            <returns></returns>
         </member>
         <member name="T:MicroFeel.Finance.Models.Datasource">
             <summary>
