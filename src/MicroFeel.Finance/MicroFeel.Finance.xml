@@ -41,6 +41,16 @@
             action
             </summary>
         </member>
+        <member name="T:MicroFeel.Finance.FinancialAssemblyNameAttribute">
+            <summary>
+            类库名称
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.FinancialTypeNameAttribute">
+            <summary>
+            类库名称
+            </summary>
+        </member>
         <member name="T:MicroFeel.Finance.FinancialExtensions">
             <summary>
             
@@ -86,6 +96,37 @@
             获取特性值
             </summary>
             <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MicroFeel.Finance.Financial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MicroFeel.Finance.Financial.Service">
+            <summary>
+            财务服务类
+            </summary>
+        </member>
+        <member name="M:MicroFeel.Finance.Financial.#ctor(MicroFeel.Finance.FinancialOptions)">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="M:MicroFeel.Finance.Financial.Asnyc``1(System.Func{MicroFeel.Finance.IFinanceService,``0})">
+            <summary>
+            异步操作
+            </summary>
+            <typeparam name="TResult"></typeparam>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Financial.Asnyc(System.Action{MicroFeel.Finance.IFinanceService})">
+            <summary>
+            异步操作
+            </summary> 
+            <param name="action"></param>
             <returns></returns>
         </member>
         <member name="T:MicroFeel.Finance.IFinanceService">
@@ -146,6 +187,27 @@
             添加通用核算项
             </summary>
             <param name="item">通用核算对象</param>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.GetStores(System.String)">
+            <summary>
+            获取仓库
+            </summary>
+            <param name="brand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.GetPlaces(System.String)">
+            <summary>
+            获取仓位
+            </summary>
+            <param name="storecode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IBasicService.GetWorkShops(System.String)">
+            <summary>
+            获取工作车间
+            </summary>
+            <param name="brand"></param>
+            <returns></returns>
         </member>
         <member name="T:MicroFeel.Finance.Interfaces.IPlatformService">
             <summary>

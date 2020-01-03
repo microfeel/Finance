@@ -13,7 +13,12 @@ namespace MicroFeel.Finance
         {
             try
             {
-                return null;
+                var typeTServcie = Assembly.Load(financialType.ToAttrString<FinancialAssemblyNameAttribute>()).GetType(financialType.ToAttrString<FinancialTypeNameAttribute>());
+                if (services.ContainsKey(typeTServcie.FullName))
+                    return services[typeTServcie.FullName];
+                var instance = Activator.CreateInstance(typeTServcie, parameters) as IFinanceService;
+                services.Add(typeTServcie.FullName, instance);
+                return instance;
             }
             catch (Exception ex)
             {

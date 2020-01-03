@@ -8,27 +8,31 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>MicroFeel</Authors>
     <Company>MicroFeel.Net</Company>
     <Description>微感科技财务数据操作接口</Description>
     <Copyright>哈尔滨微感科技有限公司</Copyright>
     <PackageIconUrl>https://microfeel.net/logo-nano.png</PackageIconUrl>
-    <Version>1.1.11</Version>
-    <PackageTags>MicroFeel KingDee</PackageTags>
+    <Version>2.0.0-bate0103</Version>
+    <PackageTags>MicroFeel Finance</PackageTags>
     <PackageReleaseNotes>MicroFeel Finance Interface.</PackageReleaseNotes>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <PackageId>MicroFeel.Finance</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
     <DocumentationFile>.\MicroFeel.Finance.xml</DocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'"> 
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0" />
   </ItemGroup>
-
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+  </ItemGroup> 
   <ItemGroup>
     <Compile Remove="Models\ModelExtensions.cs" />
   </ItemGroup>
-
 </Project>

@@ -1,5 +1,7 @@
 using System;
 using System.Runtime.CompilerServices;
+using System.Threading;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace MicroFeel.Finance.XUnitTest
@@ -16,6 +18,7 @@ namespace MicroFeel.Finance.XUnitTest
             Console.WriteLine(astring);
             Console.WriteLine(bstring);
             Assert.True(astring == "/api/controller");
+
         }
 
         [Fact]
@@ -30,6 +33,17 @@ namespace MicroFeel.Finance.XUnitTest
         {
             var s = Caller1();
             Assert.Equal(s, "Caller1");
+        }
+
+        [Fact]
+        public async Task TestTaskAsync()
+        {
+            var t = Task<string>.Run(() => { 
+                Thread.Sleep(10000);
+                return "10"; });
+           // var s = await t;
+            Console.WriteLine("1");
+            Assert.Equal("","10");
         }
 
         private string Caller1()

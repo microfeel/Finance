@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace MicroFeel.Finance
@@ -56,6 +57,42 @@ namespace MicroFeel.Finance
         public override string ToString()
         {
             return this.Action;
+        }
+    }
+
+    /// <summary>
+    /// 类库名称
+    /// </summary>
+    public class FinancialAssemblyNameAttribute : Attribute
+    {
+        public string AssemblyName { get; set; }
+
+        public FinancialAssemblyNameAttribute(string assemblyname)
+        {
+            this.AssemblyName = assemblyname;
+        }
+
+        public override string ToString()
+        {
+            return this.AssemblyName;
+        }
+    }
+
+    /// <summary>
+    /// 类库名称
+    /// </summary>
+    public class FinancialTypeNameAttribute : Attribute
+    {
+        public string TypeName { get; set; }
+
+        public FinancialTypeNameAttribute(string typename)
+        {
+            this.TypeName = typename;
+        }
+
+        public override string ToString()
+        {
+            return this.TypeName;
         }
     }
 }

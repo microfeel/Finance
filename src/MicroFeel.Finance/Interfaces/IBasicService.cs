@@ -1,5 +1,6 @@
 ﻿using MicroFeel.Finance.Models;
 using System;
+using System.Collections.Generic;
 
 namespace MicroFeel.Finance.Interfaces
 {
@@ -51,5 +52,23 @@ namespace MicroFeel.Finance.Interfaces
         /// </summary>
         /// <param name="item">通用核算对象</param>
         Item AddItem(Item item);
+        /// <summary>
+        /// 获取仓库
+        /// </summary>
+        /// <param name="brand"></param>
+        /// <returns></returns>
+        List<Store> GetStores(string brand);
+        /// <summary>
+        /// 获取仓位
+        /// </summary>
+        /// <param name="storecode"></param>
+        /// <returns></returns>
+        List<Store> GetPlaces(string storecode);
+        /// <summary>
+        /// 获取工作车间
+        /// </summary>
+        /// <param name="brand"></param>
+        /// <returns></returns>
+        List<Store> GetWorkShops(string brand);
     }
 }

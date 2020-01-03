@@ -8,8 +8,7 @@ namespace MicroFeel.Finance.Interfaces
     /// </summary>
     public interface IStockService : IDisposable
     {
-        bool AddStock(Stock stock);
-
+        bool AddStock(Stock stock);  
        
     }
 }
