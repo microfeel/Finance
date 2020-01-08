@@ -20,7 +20,7 @@
     <PackageTags>Develop MicroFeel Finance</PackageTags>
     <PackageReleaseNotes>MicroFeel Finance Interface.</PackageReleaseNotes>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
-    <PackageId>MicroFeel.Finance.Develop</PackageId>
+    <PackageId>MicroFeel.Finance</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">

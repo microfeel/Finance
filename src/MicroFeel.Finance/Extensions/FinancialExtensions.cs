@@ -19,7 +19,7 @@ namespace MicroFeel.Finance
         /// <typeparam name="TModel"></typeparam>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public static TModel To<TModel>(this object obj) where TModel : class, IFinanceModel, new()
+        public static TModel To<TModel>(this object obj) where TModel : class, new()
         {
             var model = new TModel();
             var sourceType = obj.GetType();
@@ -42,7 +42,7 @@ namespace MicroFeel.Finance
         /// <param name="acModel"></param>
         /// <param name="autoAssign">自动赋值，默认true</param>
         /// <returns></returns>
-        public static TModel To<TModel>(this object obj, Action<TModel> acModel, bool autoAssign = true) where TModel : class, IFinanceModel, new()
+        public static TModel To<TModel>(this object obj, Action<TModel> acModel, bool autoAssign = true) where TModel : class, new()
         {
             if (acModel == null)
                 throw new ArgumentNullException();
