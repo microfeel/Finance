@@ -249,6 +249,55 @@
             出入库服务接口
             </summary>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.ProductIn(MicroFeel.Finance.Models.Productin)">
+            <summary>
+            成品入库
+            </summary>
+            <param name="productin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.OtherIn(MicroFeel.Finance.Models.Otherin)">
+            <summary>
+            其他入库
+            </summary>
+            <param name="otherin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.OtherOut(MicroFeel.Finance.Models.Otherout)">
+            <summary>
+            其他出库
+            </summary>
+            <param name="otherout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.PurchaseIn(MicroFeel.Finance.Models.Purchasein)">
+            <summary>
+            采购入库
+            </summary>
+            <param name="purchasein"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.Materialout(MicroFeel.Finance.Models.Materialout)">
+            <summary>
+            材料出库
+            </summary>
+            <param name="materialout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.Transvouch(MicroFeel.Finance.Models.Transvouch)">
+            <summary>
+            调拨单
+            </summary>
+            <param name="transvouch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.Saleout(MicroFeel.Finance.Models.Saleout)">
+            <summary>
+            销售出库
+            </summary>
+            <param name="saleout"></param>
+            <returns></returns>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.AddVoucher(System.Collections.Generic.IList{MicroFeel.Finance.Models.VoucherParmEntry},System.String,System.String,System.String,System.Int32,System.DateTime,System.DateTime,System.String,System.String)">
             <summary>
             添加凭证
@@ -669,19 +718,2484 @@
             订单Id
             </summary>
         </member>
-        <member name="T:MicroFeel.Finance.Models.Stock">
+        <member name="T:MicroFeel.Finance.Models.Materialout">
             <summary>
-            出入库实体
+            领料出库
             </summary>
         </member>
-        <member name="P:MicroFeel.Finance.Models.Stock.StockDetials">
+        <member name="P:MicroFeel.Finance.Models.Materialout.Code">
             <summary>
-            明细
+            单据编号
             </summary>
         </member>
-        <member name="T:MicroFeel.Finance.Models.StockDetial">
+        <member name="P:MicroFeel.Finance.Models.Materialout.Date">
             <summary>
-            出入库实体明细
+            制单日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Maker">
+            <summary>
+            制单人名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Warehousecode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Memory">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Receivecode">
+            <summary>
+            收发类型编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Departmentcode">
+            <summary>
+            部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define1">
+            <summary>
+            单据头自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define2">
+            <summary>
+            单据头自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define3">
+            <summary>
+            单据头自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define4">
+            <summary>
+            单据头自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define5">
+            <summary>
+            单据头自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define6">
+            <summary>
+            单据头自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define7">
+            <summary>
+            单据头自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define8">
+            <summary>
+            单据头自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define9">
+            <summary>
+            单据头自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define10">
+            <summary>
+            单据头自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define11">
+            <summary>
+            单据头自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define12">
+            <summary>
+            单据头自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define13">
+            <summary>
+            单据头自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define14">
+            <summary>
+            单据头自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define15">
+            <summary>
+            单据头自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Define16">
+            <summary>
+            单据头自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.Materialoutentry">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Inventorycode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Assitantunit">
+            <summary>
+            辅记量单位编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Irate">
+            <summary>
+            换算率
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Number">
+            <summary>
+            件数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Cost">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Serial">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Makedate">
+            <summary>
+            生产日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Validdate">
+            <summary>
+            失效日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free1">
+            <summary>
+            自由项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free2">
+            <summary>
+            自由项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free3">
+            <summary>
+            自由项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free4">
+            <summary>
+            自由项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free5">
+            <summary>
+            自由项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free6">
+            <summary>
+            自由项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free7">
+            <summary>
+            自由项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free8">
+            <summary>
+            自由项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free9">
+            <summary>
+            自由项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Free10">
+            <summary>
+            自由项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define22">
+            <summary>
+            单据体自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define23">
+            <summary>
+            单据体自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define24">
+            <summary>
+            单据体自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define25">
+            <summary>
+            单据体自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define26">
+            <summary>
+            单据体自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define27">
+            <summary>
+            单据体自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define28">
+            <summary>
+            单据体自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define29">
+            <summary>
+            单据体自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define30">
+            <summary>
+            单据体自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define31">
+            <summary>
+            单据体自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define32">
+            <summary>
+            单据体自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define33">
+            <summary>
+            单据体自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define34">
+            <summary>
+            单据体自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define35">
+            <summary>
+            单据体自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define36">
+            <summary>
+            单据体自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Define37">
+            <summary>
+            单据体自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Materialout.MaterialoutEntry.Rowno">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.Otherin">
+            <summary>
+            其他出库单
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Code">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Date">
+            <summary>
+            制单日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Maker">
+            <summary>
+            制单人名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Warehousecode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Warehousename">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Memory">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Receivecode">
+            <summary>
+            收发类型编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Receivename">
+            <summary>
+            收发类型
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Departmentcode">
+            <summary>
+            部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Departmentname">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define1">
+            <summary>
+            单据头自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define2">
+            <summary>
+            单据头自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define3">
+            <summary>
+            单据头自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define4">
+            <summary>
+            单据头自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define5">
+            <summary>
+            单据头自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define6">
+            <summary>
+            单据头自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define7">
+            <summary>
+            单据头自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define8">
+            <summary>
+            单据头自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define9">
+            <summary>
+            单据头自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define10">
+            <summary>
+            单据头自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define11">
+            <summary>
+            单据头自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define12">
+            <summary>
+            单据头自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define13">
+            <summary>
+            单据头自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define14">
+            <summary>
+            单据头自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define15">
+            <summary>
+            单据头自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Define16">
+            <summary>
+            单据头自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherin.Otherinentry">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.OtherinEntry">
+            <summary>
+            其他出库单明细
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Inventorycode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Inventoryname">
+            <summary>
+            存货
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Inventorystd">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Cost">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Cmassunitname">
+            <summary>
+            主计量单位名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Serial">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Makedate">
+            <summary>
+            生产日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Validdate">
+            <summary>
+            失效日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free1">
+            <summary>
+            自由项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free2">
+            <summary>
+            自由项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free3">
+            <summary>
+            自由项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free4">
+            <summary>
+            自由项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free5">
+            <summary>
+            自由项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free6">
+            <summary>
+            自由项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free7">
+            <summary>
+            自由项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free8">
+            <summary>
+            自由项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free9">
+            <summary>
+            自由项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Free10">
+            <summary>
+            自由项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define22">
+            <summary>
+            单据体自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define23">
+            <summary>
+            单据体自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define24">
+            <summary>
+            单据体自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define25">
+            <summary>
+            单据体自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define26">
+            <summary>
+            单据体自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define27">
+            <summary>
+            单据体自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define28">
+            <summary>
+            单据体自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define29">
+            <summary>
+            单据体自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define30">
+            <summary>
+            单据体自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define31">
+            <summary>
+            单据体自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define32">
+            <summary>
+            单据体自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define33">
+            <summary>
+            单据体自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define34">
+            <summary>
+            单据体自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define35">
+            <summary>
+            单据体自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define36">
+            <summary>
+            单据体自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Define37">
+            <summary>
+            单据体自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.OtherinEntry.Rowno">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Code">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Date">
+            <summary>
+            制单日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Maker">
+            <summary>
+            制单人名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Warehousecode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Warehousename">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Memory">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Receivecode">
+            <summary>
+            收发类型编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Receivename">
+            <summary>
+            收发类型
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Departmentcode">
+            <summary>
+            部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Departmentname">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define1">
+            <summary>
+            单据头自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define2">
+            <summary>
+            单据头自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define3">
+            <summary>
+            单据头自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define4">
+            <summary>
+            单据头自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define5">
+            <summary>
+            单据头自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define6">
+            <summary>
+            单据头自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define7">
+            <summary>
+            单据头自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define8">
+            <summary>
+            单据头自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define9">
+            <summary>
+            单据头自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define10">
+            <summary>
+            单据头自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define11">
+            <summary>
+            单据头自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define12">
+            <summary>
+            单据头自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define13">
+            <summary>
+            单据头自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define14">
+            <summary>
+            单据头自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define15">
+            <summary>
+            单据头自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Define16">
+            <summary>
+            单据头自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.Otheroutentry">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Inventorycode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Inventoryname">
+            <summary>
+            存货
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Inventorystd">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Cost">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Cmassunitname">
+            <summary>
+            主计量单位名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Serial">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Makedate">
+            <summary>
+            生产日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Validdate">
+            <summary>
+            失效日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free1">
+            <summary>
+            自由项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free2">
+            <summary>
+            自由项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free3">
+            <summary>
+            自由项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free4">
+            <summary>
+            自由项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free5">
+            <summary>
+            自由项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free6">
+            <summary>
+            自由项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free7">
+            <summary>
+            自由项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free8">
+            <summary>
+            自由项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free9">
+            <summary>
+            自由项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Free10">
+            <summary>
+            自由项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define22">
+            <summary>
+            单据体自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define23">
+            <summary>
+            单据体自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define24">
+            <summary>
+            单据体自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define25">
+            <summary>
+            单据体自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define26">
+            <summary>
+            单据体自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define27">
+            <summary>
+            单据体自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define28">
+            <summary>
+            单据体自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define29">
+            <summary>
+            单据体自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define30">
+            <summary>
+            单据体自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define31">
+            <summary>
+            单据体自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define32">
+            <summary>
+            单据体自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define33">
+            <summary>
+            单据体自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define34">
+            <summary>
+            单据体自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define35">
+            <summary>
+            单据体自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define36">
+            <summary>
+            单据体自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Define37">
+            <summary>
+            单据体自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Otherout.OtheroutEntry.Rowno">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Code">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Date">
+            <summary>
+            制单日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Maker">
+            <summary>
+            制单人名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Warehousecode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Memory">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Receivecode">
+            <summary>
+            收发类型编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Departmentcode">
+            <summary>
+            部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define1">
+            <summary>
+            单据头自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define2">
+            <summary>
+            单据头自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define3">
+            <summary>
+            单据头自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define4">
+            <summary>
+            单据头自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define5">
+            <summary>
+            单据头自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define6">
+            <summary>
+            单据头自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define7">
+            <summary>
+            单据头自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define8">
+            <summary>
+            单据头自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define9">
+            <summary>
+            单据头自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define10">
+            <summary>
+            单据头自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define11">
+            <summary>
+            单据头自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define12">
+            <summary>
+            单据头自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define13">
+            <summary>
+            单据头自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define14">
+            <summary>
+            单据头自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define15">
+            <summary>
+            单据头自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Define16">
+            <summary>
+            单据头自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Productin.Productinentry">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Inventorycode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Assitantunit">
+            <summary>
+            辅记量单位编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Irate">
+            <summary>
+            换算率
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Number">
+            <summary>
+            件数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Cost">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Serial">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Makedate">
+            <summary>
+            生产日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Validdate">
+            <summary>
+            失效日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free1">
+            <summary>
+            自由项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free2">
+            <summary>
+            自由项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free3">
+            <summary>
+            自由项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free4">
+            <summary>
+            自由项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free5">
+            <summary>
+            自由项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free6">
+            <summary>
+            自由项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free7">
+            <summary>
+            自由项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free8">
+            <summary>
+            自由项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free9">
+            <summary>
+            自由项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Free10">
+            <summary>
+            自由项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define22">
+            <summary>
+            单据体自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define23">
+            <summary>
+            单据体自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define24">
+            <summary>
+            单据体自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define25">
+            <summary>
+            单据体自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define26">
+            <summary>
+            单据体自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define27">
+            <summary>
+            单据体自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define28">
+            <summary>
+            单据体自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define29">
+            <summary>
+            单据体自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define30">
+            <summary>
+            单据体自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define31">
+            <summary>
+            单据体自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define32">
+            <summary>
+            单据体自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define33">
+            <summary>
+            单据体自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define34">
+            <summary>
+            单据体自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define35">
+            <summary>
+            单据体自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define36">
+            <summary>
+            单据体自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Define37">
+            <summary>
+            单据体自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.ProductinEntry.Rowno">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Code">
+            <summary>
+            单据编号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Date">
+            <summary>
+            制单日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Maker">
+            <summary>
+            制单人名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Warehousecode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Warehousename">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Vendorcode">
+            <summary>
+            供货单位编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Vendorabbname">
+            <summary>
+            供货单位简称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Vendorname">
+            <summary>
+            供货单位
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Memory">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Receivecode">
+            <summary>
+            收发类型编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Receivename">
+            <summary>
+            收发类型
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Departmentcode">
+            <summary>
+            部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Departmentname">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define1">
+            <summary>
+            单据头自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define2">
+            <summary>
+            单据头自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define3">
+            <summary>
+            单据头自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define4">
+            <summary>
+            单据头自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define5">
+            <summary>
+            单据头自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define6">
+            <summary>
+            单据头自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define7">
+            <summary>
+            单据头自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define8">
+            <summary>
+            单据头自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define9">
+            <summary>
+            单据头自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define10">
+            <summary>
+            单据头自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define11">
+            <summary>
+            单据头自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define12">
+            <summary>
+            单据头自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define13">
+            <summary>
+            单据头自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define14">
+            <summary>
+            单据头自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define15">
+            <summary>
+            单据头自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Define16">
+            <summary>
+            单据头自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Taxrate">
+            <summary>
+            税率
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.Purchaseinentry">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Inventorycode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Inventoryname">
+            <summary>
+            存货
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Inventorystd">
+            <summary>
+            规格型号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Price">
+            <summary>
+            本币单价
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Cost">
+            <summary>
+            本币金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Ioritaxprice">
+            <summary>
+            税额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Iorisum">
+            <summary>
+            价税合计
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Taxprice">
+            <summary>
+            本币税额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Isum">
+            <summary>
+            本币价税合计
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Ioritaxcost">
+            <summary>
+            含税单价，传入会自动重新计算相关价格及金额。
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Ioricost">
+            <summary>
+            单价，传入会自动重新计算相关价格及金额。如果传入了含税单价，以含税单价为准自动计算。
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Iorimoney">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Cmassunitname">
+            <summary>
+            主计量单位名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Serial">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Makedate">
+            <summary>
+            生产日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Validdate">
+            <summary>
+            失效日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free1">
+            <summary>
+            自由项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free2">
+            <summary>
+            自由项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free3">
+            <summary>
+            自由项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free4">
+            <summary>
+            自由项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free5">
+            <summary>
+            自由项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free6">
+            <summary>
+            自由项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free7">
+            <summary>
+            自由项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free8">
+            <summary>
+            自由项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free9">
+            <summary>
+            自由项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Free10">
+            <summary>
+            自由项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Assitantunitname">
+            <summary>
+            辅计量单位名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Irate">
+            <summary>
+            换算率
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Number">
+            <summary>
+            件数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define22">
+            <summary>
+            单据体自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define23">
+            <summary>
+            单据体自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define24">
+            <summary>
+            单据体自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define25">
+            <summary>
+            单据体自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define26">
+            <summary>
+            单据体自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define27">
+            <summary>
+            单据体自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define28">
+            <summary>
+            单据体自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define29">
+            <summary>
+            单据体自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define30">
+            <summary>
+            单据体自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define31">
+            <summary>
+            单据体自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define32">
+            <summary>
+            单据体自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define33">
+            <summary>
+            单据体自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define34">
+            <summary>
+            单据体自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define35">
+            <summary>
+            单据体自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define36">
+            <summary>
+            单据体自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Define37">
+            <summary>
+            单据体自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Purchasein.PurchaseinEntry.Rowno">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Businesstype">
+            <summary>
+            业务类型
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Source">
+            <summary>
+            单据来源
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Businesscode">
+            <summary>
+            对应业务单号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Warehousecode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Warehousename">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Date">
+            <summary>
+            单据日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Code">
+            <summary>
+            单据号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Receivecode">
+            <summary>
+            收发类别编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Receivename">
+            <summary>
+            收发类别名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Departmentcode">
+            <summary>
+            部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Departmentname">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Personcode">
+            <summary>
+            业务员编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Saletypecode">
+            <summary>
+            销售类型编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Customercode">
+            <summary>
+            客户编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Vendorcode">
+            <summary>
+            供应商编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Arrivedate">
+            <summary>
+            到货日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Handler">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Memory">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Maker">
+            <summary>
+            制单人
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define1">
+            <summary>
+            自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define2">
+            <summary>
+            自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define3">
+            <summary>
+            自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define4">
+            <summary>
+            自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define5">
+            <summary>
+            自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define6">
+            <summary>
+            自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define7">
+            <summary>
+            自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define8">
+            <summary>
+            自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define9">
+            <summary>
+            自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define10">
+            <summary>
+            自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define11">
+            <summary>
+            自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define12">
+            <summary>
+            自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define13">
+            <summary>
+            自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define14">
+            <summary>
+            自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define15">
+            <summary>
+            自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Define16">
+            <summary>
+            自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Auditdate">
+            <summary>
+            审核日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Personname">
+            <summary>
+            业务员名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Saletypename">
+            <summary>
+            销售类型名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Customername">
+            <summary>
+            客户名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Timestamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Saleout.Saleoutentry">
+            <summary>
+            条形码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Barcode">
+            <summary>
+            条形码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Inventorycode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free1">
+            <summary>
+            存货自由项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free2">
+            <summary>
+            存货自由项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free3">
+            <summary>
+            存货自由项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free4">
+            <summary>
+            存货自由项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free5">
+            <summary>
+            存货自由项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free6">
+            <summary>
+            存货自由项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free7">
+            <summary>
+            存货自由项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free8">
+            <summary>
+            存货自由项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free9">
+            <summary>
+            存货自由项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Free10">
+            <summary>
+            存货自由项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Shouldquantity">
+            <summary>
+            应发数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Shouldnumber">
+            <summary>
+            应发件数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Cmassunitname">
+            <summary>
+            主计量单位
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Assitantunit">
+            <summary>
+            库存单位码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Assitantunitname">
+            <summary>
+            库存单位
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Irate">
+            <summary>
+            换算率
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Number">
+            <summary>
+            件数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Cost">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Serial">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Makedate">
+            <summary>
+            生产日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Validdate">
+            <summary>
+            失效日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define22">
+            <summary>
+            表体自定义项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define23">
+            <summary>
+            表体自定义项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define24">
+            <summary>
+            表体自定义项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define25">
+            <summary>
+            表体自定义项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define26">
+            <summary>
+            表体自定义项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define27">
+            <summary>
+            表体自定义项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define28">
+            <summary>
+            表体自定义项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define29">
+            <summary>
+            表体自定义项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define30">
+            <summary>
+            表体自定义项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define31">
+            <summary>
+            表体自定义项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define32">
+            <summary>
+            表体自定义项11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define33">
+            <summary>
+            表体自定义项12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define34">
+            <summary>
+            表体自定义项13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define35">
+            <summary>
+            表体自定义项14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define36">
+            <summary>
+            表体自定义项15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Define37">
+            <summary>
+            表体自定义项16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Rowno">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Subconsignmentcode">
+            <summary>
+            发货单号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.SaleoutEntry.Ordercode">
+            <summary>
+            订单号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Idepcode">
+            <summary>
+            转入部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Idepname">
+            <summary>
+            转入部门名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Odepcode">
+            <summary>
+            转出部门编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Odepname">
+            <summary>
+            转出部门名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Irdcode">
+            <summary>
+            入库类别编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Irdname">
+            <summary>
+            入库类别名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Ordcode">
+            <summary>
+            出库类别编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Ordname">
+            <summary>
+            出库类别名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Iwhcode">
+            <summary>
+            转入仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Iwhname">
+            <summary>
+            转入仓库名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Owhcode">
+            <summary>
+            转出仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Owhname">
+            <summary>
+            转出仓库名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Personcode">
+            <summary>
+            业务员编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Personname">
+            <summary>
+            业务员名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Tvcode">
+            <summary>
+            调拨单据号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Date">
+            <summary>
+            单据日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Memory">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Auditperson">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Auditdate">
+            <summary>
+            审核日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Maker">
+            <summary>
+            制单人
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define1">
+            <summary>
+            自定义字段1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define2">
+            <summary>
+            自定义字段2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define3">
+            <summary>
+            自定义字段3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define4">
+            <summary>
+            自定义字段4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define5">
+            <summary>
+            自定义字段5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define6">
+            <summary>
+            自定义字段6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define7">
+            <summary>
+            自定义字段7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define8">
+            <summary>
+            自定义字段8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define9">
+            <summary>
+            自定义字段9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define10">
+            <summary>
+            自定义字段10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define11">
+            <summary>
+            自定义字段11
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define12">
+            <summary>
+            自定义字段12
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define13">
+            <summary>
+            自定义字段13
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define14">
+            <summary>
+            自定义字段14
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define15">
+            <summary>
+            自定义字段15
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Define16">
+            <summary>
+            自定义字段16
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free1">
+            <summary>
+            自由项1
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free2">
+            <summary>
+            自由项2
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free3">
+            <summary>
+            自由项3
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free4">
+            <summary>
+            自由项4
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free5">
+            <summary>
+            自由项5
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free6">
+            <summary>
+            自由项6
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free7">
+            <summary>
+            自由项7
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free8">
+            <summary>
+            自由项8
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free9">
+            <summary>
+            自由项9
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Free10">
+            <summary>
+            自由项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Ordertype">
+            <summary>
+            订单类型
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Transappcode">
+            <summary>
+            调拨申请单号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Csource">
+            <summary>
+            自由项10
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.Transvouchentry">
+            <summary>
+            条形码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Barcode">
+            <summary>
+            条形码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Inventorycode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Quantity">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Cmassunitname">
+            <summary>
+            主计量单位名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Assitantunit">
+            <summary>
+            辅计量单位
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Assitantunitname">
+            <summary>
+            辅计量单位名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Irate">
+            <summary>
+            换算率
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Number">
+            <summary>
+            件数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Actualcost">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Actualprice">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Inposcode">
+            <summary>
+            调入货位
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Outposcode">
+            <summary>
+            调出货位
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define22">
+            <summary>
+            表体自定义项22
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define23">
+            <summary>
+            表体自定义项23
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define24">
+            <summary>
+            表体自定义项24
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define25">
+            <summary>
+            表体自定义项25
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define26">
+            <summary>
+            表体自定义项26
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define27">
+            <summary>
+            表体自定义项27
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define28">
+            <summary>
+            表体自定义项28
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define29">
+            <summary>
+            表体自定义项29
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define30">
+            <summary>
+            表体自定义项30
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define31">
+            <summary>
+            表体自定义项31
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define32">
+            <summary>
+            表体自定义项32
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define33">
+            <summary>
+            表体自定义项33
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define34">
+            <summary>
+            表体自定义项34
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define35">
+            <summary>
+            表体自定义项35
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define36">
+            <summary>
+            表体自定义项36
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Define37">
+            <summary>
+            表体自定义项37
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Irowno">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.Transvouch.TransvouchEntry.Inventoryname">
+            <summary>
+            存货名称
             </summary>
         </member>
         <member name="T:MicroFeel.Finance.Models.Voucher">

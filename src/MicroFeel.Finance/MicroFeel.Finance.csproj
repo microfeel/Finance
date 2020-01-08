@@ -12,14 +12,15 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>MicroFeel</Authors>
     <Company>MicroFeel.Net</Company>
-    <Description>微感科技财务数据操作接口</Description>
+    <Description>微感科技财务数据操作接口(开发版本）
+增加出入库接口约束</Description>
     <Copyright>哈尔滨微感科技有限公司</Copyright>
     <PackageIconUrl>https://microfeel.net/logo-nano.png</PackageIconUrl>
-    <Version>2.0.0-bate0103</Version>
-    <PackageTags>MicroFeel Finance</PackageTags>
+    <Version>2.0.0-bate0108.1530</Version>
+    <PackageTags>Develop MicroFeel Finance</PackageTags>
     <PackageReleaseNotes>MicroFeel Finance Interface.</PackageReleaseNotes>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
-    <PackageId>MicroFeel.Finance</PackageId>
+    <PackageId>MicroFeel.Finance.Develop</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
