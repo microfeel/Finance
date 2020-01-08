@@ -18,8 +18,8 @@ namespace MicroFeel.Finance
         [FinancialAssemblyName("MicroFeel.KingDee")]
         [FinancialTypeName("MicroFeel.KingDee.K3.K3Context")]
         KingDeeK3,
-        [FinancialAssemblyName("MicroFeel.Yonyou.Api")]
-        [FinancialTypeName("MicroFeel.Yonyou.Api.YongYouService")]
+        [FinancialAssemblyName("MicroFeel.Yonyou.Services")]
+        [FinancialTypeName("MicroFeel.Yonyou.Services.YongYouService")]
         YongYouU8
     }
 }
