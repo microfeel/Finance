@@ -11,7 +11,7 @@ namespace MicroFeel.Finance
     /// <summary>
     /// 财务API
     /// </summary>
-    public partial interface IFinanceService : IBasicService, IBarcodeService, IHrService, IPlatformService, IPurchaseService, ISaleService, IStockService, IUserService, IVoucherService
+    public partial interface IFinanceService : IBasicService, IBarcodeService, IHrService, IPlatformService, IPurchaseService, ISaleService, IStockService, IUserService, IVoucherService, IOutsourcingService, IDbOperation
     {
 
     }

@@ -16,7 +16,7 @@
 增加出入库接口约束</Description>
     <Copyright>哈尔滨微感科技有限公司</Copyright>
     <PackageIconUrl>https://microfeel.net/logo-nano.png</PackageIconUrl>
-    <Version>2.0.0-bate0108.1530</Version>
+    <Version>2.0.0-beta0224.1</Version>
     <PackageTags>Develop MicroFeel Finance</PackageTags>
     <PackageReleaseNotes>MicroFeel Finance Interface.</PackageReleaseNotes>
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
@@ -35,5 +35,8 @@
   </ItemGroup> 
   <ItemGroup>
     <Compile Remove="Models\ModelExtensions.cs" />
+  </ItemGroup> 
+  <ItemGroup>
+    <PackageReference Include="Sugar.Utils" Version="1.2.0-preview191231" />
   </ItemGroup>
 </Project>

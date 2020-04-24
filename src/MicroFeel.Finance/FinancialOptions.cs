@@ -8,6 +8,7 @@ namespace MicroFeel.Finance
     public class FinancialOptions
     {
         public FinancialType FinancialType { get; set; }
+        public string FinancialDbConnectionString { get; set; }
     }
 
     public enum FinancialType

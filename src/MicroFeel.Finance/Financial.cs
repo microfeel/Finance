@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -15,13 +14,23 @@ namespace MicroFeel.Finance
         /// 财务服务类
         /// </summary>
         public IFinanceService Service;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public Financial()
+        {
+
+        }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="options"></param>
-        public Financial(FinancialOptions options)
+        public Financial(FinancialOptions options):this()
         {
-            Service = FinancialFactory.Create(options.FinancialType);
+            Service = string.IsNullOrEmpty(options.FinancialDbConnectionString) ? FinancialFactory.Create(options.FinancialType) : FinancialFactory.Create(options.FinancialType, options.FinancialDbConnectionString);
+            // Service = string.IsNullOrEmpty(options.FinancialDbConnectionString) ? new YongYouService():new YongYouService(options.FinancialDbConnectionString);
+
         }
 
         /// <summary>
