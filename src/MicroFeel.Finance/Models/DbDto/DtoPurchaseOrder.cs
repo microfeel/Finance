@@ -23,7 +23,7 @@ namespace MicroFeel.Finance.Models.DbDto
         public List<DtoPurchaseOrderDetail> PurchaseOrderDetails { get; set; }
         public class DtoPurchaseOrderDetail
         {
-            public int Id { get; set; }
+            public int AutoId { get; set; }
             public string ProductName { get; set; }
             public string ProductNumbers { get; set; }
             public decimal Numbers { get; set; }

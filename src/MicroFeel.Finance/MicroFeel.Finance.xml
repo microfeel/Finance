@@ -384,6 +384,14 @@
             <param name="isclose"></param>
             <returns></returns>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrders(System.String,System.String)">
+            <summary>
+            采购到货单
+            </summary>
+            <param name="brand"></param>
+            <param name="orderno"></param>
+            <returns></returns>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrders(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
             <summary>
             获取到货单 包含委外和采购
@@ -555,6 +563,13 @@
             添加退料申请单
             </summary>
             <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.FromPuArrivalVouchToStoreRecord(System.String)">
+            <summary>
+            从到货单下推入库单
+            </summary>
+            <param name="puarrivalOrderNo">到货单号</param>
             <returns></returns>
         </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.UpdatePurchaseOrderState(System.String,System.String)">

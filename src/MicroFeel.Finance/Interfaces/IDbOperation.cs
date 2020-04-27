@@ -21,6 +21,7 @@ namespace MicroFeel.Finance.Interfaces
         /// </summary>
         /// <returns></returns>
         Dictionary<string, string> GetDepartments(string departmentcode);
+          
         /// <summary>
         /// 获取仓库信息
         /// </summary>
@@ -183,6 +184,13 @@ namespace MicroFeel.Finance.Interfaces
         /// <returns></returns>
         List<DtoSellOrder> GetSellOrders(string brand, string orderno, bool isclose = false);
 
+        /// <summary>
+        /// 采购到货单
+        /// </summary>
+        /// <param name="brand"></param>
+        /// <param name="orderno"></param>
+        /// <returns></returns>
+        List<DtoPurchaseOrder> GetPurchaseOrders(string brand, string orderno);
         /// <summary>
         /// 获取到货单 包含委外和采购
         /// </summary>
@@ -358,6 +366,12 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="order"></param>
         /// <returns></returns>
         bool AddReturnMetarialApply(DtoStockOrder order);
+        /// <summary>
+        /// 从到货单下推入库单
+        /// </summary>
+        /// <param name="puarrivalOrderNo">到货单号</param>
+        /// <returns></returns>
+        bool FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo);
 
         #endregion
 
