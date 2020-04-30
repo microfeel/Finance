@@ -15,6 +15,7 @@ namespace MicroFeel.Finance.Models.DbDto
             public decimal? Numbers { get; set; }
             public string ProductBatch { get; set; }
             public int? SourceEntryId { get; set; }
+            public string StoreId { get; set; }
         }
         public IEnumerable<DtoStoreStockDetail> StoreStockDetail { get; set; }
         public string Brand { get; set; }
