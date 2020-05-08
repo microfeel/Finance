@@ -21,7 +21,7 @@ namespace MicroFeel.Finance.Interfaces
         /// </summary>
         /// <returns></returns>
         Dictionary<string, string> GetDepartments(string departmentcode);
-          
+
         /// <summary>
         /// 获取仓库信息
         /// </summary>
@@ -97,11 +97,14 @@ namespace MicroFeel.Finance.Interfaces
         /// </summary>
         /// <param name="brand"></param>
         /// <param name="orderno"></param>
+        /// <param name="starttime"></param>
+        /// <param name="endtime"></param>
+        /// <param name="isChecked"></param>
         /// <param name="pageindex"></param>
         /// <param name="pagesize"></param>
         /// <param name="total"></param>
         /// <returns></returns>
-        List<DtoAllotOrder> GetAllotOrders(string brand, string orderno, int pageindex, int pagesize, out int total);
+        List<DtoAllotOrder> GetAllotOrders(string brand, string orderno, DateTime? starttime, DateTime? endtime, bool isChecked, int pageindex, int pagesize, out int total);
 
         /// <summary>
         /// 调拨出库单
