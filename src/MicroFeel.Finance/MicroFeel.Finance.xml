@@ -293,12 +293,15 @@
             <param name="code"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotOrders(System.String,System.String,System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotOrders(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Int32,System.Int32,System.Int32@)">
             <summary>
             获取调拨单
             </summary>
             <param name="brand"></param>
             <param name="orderno"></param>
+            <param name="starttime"></param>
+            <param name="endtime"></param>
+            <param name="isChecked"></param>
             <param name="pageindex"></param>
             <param name="pagesize"></param>
             <param name="total"></param>
