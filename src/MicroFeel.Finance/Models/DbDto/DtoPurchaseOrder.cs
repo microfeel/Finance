@@ -21,6 +21,11 @@ namespace MicroFeel.Finance.Models.DbDto
         public string State { get; set; }
 
         public List<DtoPurchaseOrderDetail> PurchaseOrderDetails { get; set; }
+        /// <summary>
+        /// 采购订单单号
+        /// </summary>
+        public string PurchaseOrderNo { get; set; }
+
         public class DtoPurchaseOrderDetail
         {
             public int AutoId { get; set; }
@@ -38,6 +43,7 @@ namespace MicroFeel.Finance.Models.DbDto
             public DateTime? ArriveDate { get; set; }
             public decimal? Price { get; set; }
             public decimal Rate { get; set; }
+            public string ProductBatch { get; set; }
         }
     }
 }

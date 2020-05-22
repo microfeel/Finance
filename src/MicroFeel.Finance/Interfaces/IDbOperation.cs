@@ -1,5 +1,6 @@
 ﻿using MicroFeel.Finance.Models;
 using MicroFeel.Finance.Models.DbDto;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,10 @@ namespace MicroFeel.Finance.Interfaces
 {
     public interface IDbOperation
     {
+        /// <summary>
+        /// 事务
+        /// </summary>
+        IDbContextTransaction BeginTransaction();
 
         #region 基础资料
         /// <summary>
@@ -74,6 +79,12 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="code"></param>
         /// <returns></returns>
         DtoPerson GetPerson(string code);
+        /// <summary>
+        /// 获取用户
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        DtoPerson GetPersonByName(string name);
 
         /// <summary>
         /// 获取供应商ByPhoneCode
@@ -177,6 +188,19 @@ namespace MicroFeel.Finance.Interfaces
         bool CheckAllotOutRecord(string orderno, string autoid);
         #endregion
 
+        /// <summary>
+        /// 获取委外生产产品明细单
+        /// </summary>
+        /// <param name="brand"></param>
+        /// <param name="key"></param>
+        /// <param name="supplier"></param>
+        /// <param name="starttime"></param>
+        /// <param name="endtime"></param>
+        /// <param name="pageindex"></param>
+        /// <param name="pagesize"></param>
+        /// <param name="total"></param>
+        /// <returns></returns>
+        List<DtoOutsourcingOrder> GetOutsourcingOrders(string brand, string key, string supplier, DateTime? starttime, DateTime? endtime, int pageindex, int pagesize, out int total);
 
         /// <summary>
         /// 获取销售发货单
@@ -188,15 +212,18 @@ namespace MicroFeel.Finance.Interfaces
         List<DtoSellOrder> GetSellOrders(string brand, string orderno, bool isclose = false);
 
         /// <summary>
-        /// 采购到货单
+        /// 获取采购到货单
         /// </summary>
+        /// <param name="ordertype"></param>
         /// <param name="brand"></param>
         /// <param name="orderno"></param>
+        /// <param name="state"></param>
         /// <returns></returns>
-        List<DtoPurchaseOrder> GetPurchaseOrders(string brand, string orderno);
+        List<DtoPurchaseOrder> GetPurchaseOrders(string ordertype, string brand, string orderno, string state);
         /// <summary>
         /// 获取到货单 包含委外和采购
         /// </summary>
+        /// <param name="ordertype">单据类型 （普通采购/委外加工）</param>
         /// <param name="brand">品牌</param>
         /// <param name="key">单号</param>
         /// <param name="supplier">供应商</param>
@@ -207,7 +234,7 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="pagesize"></param>
         /// <param name="total"></param>
         /// <returns></returns>
-        List<DtoPurchaseOrder> GetPurchaseOrders(string brand, string key, string supplier, string state, DateTime? starttime, DateTime? endtime, int pageindex, int pagesize, out int total);
+        List<DtoPurchaseOrder> GetPurchaseOrders(string ordertype, string brand, string key, string supplier, string state, DateTime? starttime, DateTime? endtime, int pageindex, int pagesize, out int total);
 
         /// <summary>
         /// 获取初审通过单据
@@ -347,14 +374,14 @@ namespace MicroFeel.Finance.Interfaces
         /// </summary>
         /// <param name="order"></param>
         /// <returns></returns>
-        bool AddSellOrder(DtoStockOrder order);
+        bool AddSellOrder(DtoStockOrder order, ref string errmsg);
 
         /// <summary>
         /// 添加领料出库订单
         /// </summary>
         /// <param name="order"></param>
         /// <returns></returns>
-        bool AddMaterialOrder(DtoStockOrder order);
+        bool AddMaterialOrder(DtoStockOrder order,ref string errmsg);
 
         /// <summary>
         /// 添加领料申请单
@@ -376,6 +403,22 @@ namespace MicroFeel.Finance.Interfaces
         /// <returns></returns>
         bool FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo);
 
+        /// <summary>
+        /// 从到货单下推入库单
+        /// </summary>
+        /// <param name="puarrivalOrderNo">到货单号</param>
+        /// <param name="batchs">批号</param>
+        /// <returns></returns>
+        bool FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo, Dictionary<string, string> batchs);
+
+        /// <summary>
+        /// 从到货单下推入库单
+        /// </summary>
+        /// <param name="puarrivalOrderNo">到货单号</param>
+        /// <param name="sendOrderNo">供应商/委外工厂 发货单号</param> 
+        /// <returns></returns>
+        bool FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo, string sendOrderNo);
+
         #endregion
 
         #region Update
@@ -386,6 +429,18 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="state"></param>
         /// <returns></returns>
         bool UpdatePurchaseOrderState(string orderno, string state);
+        #endregion
+
+        #region Close
+        /// <summary>
+        /// 关闭到货单
+        /// </summary>
+        /// <param name="orderno">单号</param>
+        /// <param name="closer">关闭人</param>
+        /// <param name="action">事务内需要做的事情</param>
+        /// <param name="tran">事务</param>
+        /// <returns></returns>
+        bool ClosePurarrivalOrderTransaction(string orderno, string closer, Func<bool, bool> action);
         #endregion
     }
 }

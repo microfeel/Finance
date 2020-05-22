@@ -1,5 +1,6 @@
 ﻿using MicroFeel.Finance.Models;
 using System;
+using System.Threading.Tasks;
 
 namespace MicroFeel.Finance.Interfaces
 {
@@ -33,8 +34,9 @@ namespace MicroFeel.Finance.Interfaces
         /// 采购入库
         /// </summary>
         /// <param name="purchasein"></param>
+        /// <param name="purchaseorderno">采购订单单号</param>
         /// <returns></returns>
-        bool PurchaseIn(Purchasein purchasein);
+        Task<bool> PurchaseInAsync(Purchasein purchasein, string purchaseorderno);
 
         /// <summary>
         /// 材料出库

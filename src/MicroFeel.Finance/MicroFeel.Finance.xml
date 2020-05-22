@@ -214,6 +214,11 @@
             <param name="brand"></param>
             <returns></returns>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.BeginTransaction">
+            <summary>
+            事务
+            </summary>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetDepartments">
             <summary>
             获取部门信息
@@ -277,6 +282,13 @@
             获取职员
             </summary>
             <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPersonByName(System.String)">
+            <summary>
+            获取用户
+            </summary>
+            <param name="name"></param>
             <returns></returns>
         </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetSupplierByPhone(System.String)">
@@ -378,6 +390,20 @@
             <param name="autoid"></param>
             <returns></returns>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetOutsourcingOrders(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            获取委外生产产品明细单
+            </summary>
+            <param name="brand"></param>
+            <param name="key"></param>
+            <param name="supplier"></param>
+            <param name="starttime"></param>
+            <param name="endtime"></param>
+            <param name="pageindex"></param>
+            <param name="pagesize"></param>
+            <param name="total"></param>
+            <returns></returns>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetSellOrders(System.String,System.String,System.Boolean)">
             <summary>
             获取销售发货单
@@ -387,18 +413,21 @@
             <param name="isclose"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrders(System.String,System.String)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrders(System.String,System.String,System.String,System.String)">
             <summary>
-            采购到货单
+            获取采购到货单
             </summary>
+            <param name="ordertype"></param>
             <param name="brand"></param>
             <param name="orderno"></param>
+            <param name="state"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrders(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrders(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
             <summary>
             获取到货单 包含委外和采购
             </summary>
+            <param name="ordertype">单据类型 （普通采购/委外加工）</param>
             <param name="brand">品牌</param>
             <param name="key">单号</param>
             <param name="supplier">供应商</param>
@@ -540,14 +569,14 @@
             <param name="order"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.AddSellOrder(MicroFeel.Finance.Models.DbDto.DtoStockOrder)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.AddSellOrder(MicroFeel.Finance.Models.DbDto.DtoStockOrder,System.String@)">
             <summary>
             添加销售出库订单
             </summary>
             <param name="order"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.AddMaterialOrder(MicroFeel.Finance.Models.DbDto.DtoStockOrder)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.AddMaterialOrder(MicroFeel.Finance.Models.DbDto.DtoStockOrder,System.String@)">
             <summary>
             添加领料出库订单
             </summary>
@@ -575,12 +604,38 @@
             <param name="puarrivalOrderNo">到货单号</param>
             <returns></returns>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.FromPuArrivalVouchToStoreRecord(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            从到货单下推入库单
+            </summary>
+            <param name="puarrivalOrderNo">到货单号</param>
+            <param name="batchs">批号</param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.FromPuArrivalVouchToStoreRecord(System.String,System.String)">
+            <summary>
+            从到货单下推入库单
+            </summary>
+            <param name="puarrivalOrderNo">到货单号</param>
+            <param name="sendOrderNo">供应商/委外工厂 发货单号</param> 
+            <returns></returns>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.UpdatePurchaseOrderState(System.String,System.String)">
             <summary>
             更新单据状态
             </summary>
             <param name="orderno"></param>
             <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.ClosePurarrivalOrderTransaction(System.String,System.String,System.Func{System.Boolean,System.Boolean})">
+            <summary>
+            关闭到货单
+            </summary>
+            <param name="orderno">单号</param>
+            <param name="closer">关闭人</param>
+            <param name="action">事务内需要做的事情</param>
+            <param name="tran">事务</param>
             <returns></returns>
         </member>
         <member name="T:MicroFeel.Finance.Interfaces.IOutsourcingService">
@@ -659,11 +714,12 @@
             <param name="otherout"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IStockService.PurchaseIn(MicroFeel.Finance.Models.Purchasein)">
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.PurchaseInAsync(MicroFeel.Finance.Models.Purchasein,System.String)">
             <summary>
             采购入库
             </summary>
             <param name="purchasein"></param>
+            <param name="purchaseorderno">采购订单单号</param>
             <returns></returns>
         </member>
         <member name="M:MicroFeel.Finance.Interfaces.IStockService.Materialout(MicroFeel.Finance.Models.Materialout)">
@@ -1010,6 +1066,11 @@
         <member name="T:MicroFeel.Finance.Models.DbDto.DtoMaterialOrder">
             <summary>
             领料单
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoPurchaseOrder.PurchaseOrderNo">
+            <summary>
+            采购订单单号
             </summary>
         </member>
         <member name="T:MicroFeel.Finance.Models.DbDto.DtoSupplier">
