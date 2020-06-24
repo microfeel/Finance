@@ -5,14 +5,14 @@
  */
 
 using MicroFeel.Finance.Interfaces;
+using MicroFeel.Finance.Models;
 
 namespace MicroFeel.Finance
 {
     /// <summary>
     /// 财务API
     /// </summary>
-    public partial interface IFinanceService : IBasicService, IBarcodeService, IHrService, IPlatformService, IPurchaseService, ISaleService, IStockService, IUserService, IVoucherService, IOutsourcingService, IDbOperation
+    public partial interface IFinanceService : IBasicService, IPlatformService, IStockService, IVoucherService, IOutsourcingService, IDbOperation
     {
-
     }
 }

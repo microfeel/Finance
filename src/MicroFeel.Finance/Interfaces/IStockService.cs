@@ -1,5 +1,6 @@
 ﻿using MicroFeel.Finance.Models;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace MicroFeel.Finance.Interfaces
@@ -7,8 +8,17 @@ namespace MicroFeel.Finance.Interfaces
     /// <summary>
     /// 出入库服务接口
     /// </summary>
-    public interface IStockService : IDisposable
+    public interface IStockService
     {
+        /// <summary>
+        /// 获取到货单
+        /// </summary>
+        /// <param name="pageIndex">页码</param>
+        /// <param name="pageSize">每页记录数</param>
+        /// <param name="billState">页状态</param>
+        /// <returns></returns>
+        PagedResult<DispatchBill> GetDispatchBills(int pageIndex, int pageSize, DispatchBillState billState);
+
         /// <summary>
         /// 成品入库
         /// </summary>
@@ -58,5 +68,11 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="saleout"></param>
         /// <returns></returns>
         bool Saleout(Saleout saleout);
+        /// <summary>
+        /// 获取发货单详情
+        /// </summary>
+        /// <param name="billNo"></param>
+        /// <returns></returns>
+        IList<DispatchBillDetail> GetDispatchBillDetail(string billNo);
     }
 }

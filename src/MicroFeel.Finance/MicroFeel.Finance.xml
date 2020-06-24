@@ -4,136 +4,6 @@
         <name>MicroFeel.Finance</name>
     </assembly>
     <members>
-        <member name="T:MicroFeel.Finance.FinancialAttribute">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.FinancialPathAttribute">
-            <summary>
-            财务请求特性
-            </summary>
-        </member>
-        <member name="M:MicroFeel.Finance.FinancialPathAttribute.#ctor(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="path">请求路径（不包含action）</param>
-        </member>
-        <member name="P:MicroFeel.Finance.FinancialPathAttribute.Path">
-            <summary>
-            请求路径（不包含action）
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.FinancialActionAttribute">
-            <summary>
-            财务请求特性
-            </summary>
-        </member>
-        <member name="M:MicroFeel.Finance.FinancialActionAttribute.#ctor(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="action"> action </param>
-        </member>
-        <member name="P:MicroFeel.Finance.FinancialActionAttribute.Action">
-            <summary>
-            action
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.FinancialAssemblyNameAttribute">
-            <summary>
-            类库名称
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.FinancialTypeNameAttribute">
-            <summary>
-            类库名称
-            </summary>
-        </member>
-        <member name="T:MicroFeel.Finance.FinancialExtensions">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:MicroFeel.Finance.FinancialExtensions.To``1(System.Object)">
-            <summary>
-            实体转换
-            </summary>
-            <typeparam name="TModel"></typeparam>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MicroFeel.Finance.FinancialExtensions.To``1(System.Object,System.Action{``0},System.Boolean)">
-            <summary>
-            实体转换
-            </summary>
-            <remarks>指定属性进行赋值，一般是因为两个对象的属性名称不同所致，只需要指定不同的属性即可，相同的属性会完成自动赋值</remarks>
-            <typeparam name="TModel"></typeparam>
-            <param name="obj"></param>
-            <param name="acModel"></param>
-            <param name="autoAssign">自动赋值，默认true</param>
-            <returns></returns>
-        </member>
-        <member name="M:MicroFeel.Finance.FinancialExtensions.ToAttrString``1(System.Enum)">
-            <summary>
-            获取特性值
-            </summary>
-            <typeparam name="TAttrbute"></typeparam>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MicroFeel.Finance.FinancialExtensions.ToAttrString(System.Enum)">
-            <summary>
-            获取特性值
-            </summary>
-            <typeparam name="TAttrbute"></typeparam>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MicroFeel.Finance.FinancialExtensions.ToDescriptionString(System.Enum)">
-            <summary>
-            获取特性值
-            </summary>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="T:MicroFeel.Finance.Financial">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:MicroFeel.Finance.Financial.Service">
-            <summary>
-            财务服务类
-            </summary>
-        </member>
-        <member name="M:MicroFeel.Finance.Financial.#ctor">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:MicroFeel.Finance.Financial.#ctor(MicroFeel.Finance.FinancialOptions)">
-            <summary>
-            
-            </summary>
-            <param name="options"></param>
-        </member>
-        <member name="M:MicroFeel.Finance.Financial.Asnyc``1(System.Func{MicroFeel.Finance.IFinanceService,``0})">
-            <summary>
-            异步操作
-            </summary>
-            <typeparam name="TResult"></typeparam>
-            <param name="action"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MicroFeel.Finance.Financial.Asnyc(System.Action{MicroFeel.Finance.IFinanceService})">
-            <summary>
-            异步操作
-            </summary> 
-            <param name="action"></param>
-            <returns></returns>
-        </member>
         <member name="T:MicroFeel.Finance.IFinanceService">
             <summary>
             财务API
@@ -213,11 +83,6 @@
             </summary>
             <param name="brand"></param>
             <returns></returns>
-        </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.BeginTransaction">
-            <summary>
-            事务
-            </summary>
         </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetDepartments">
             <summary>
@@ -305,7 +170,7 @@
             <param name="code"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotOrders(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotOrders(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Int32,System.Int32)">
             <summary>
             获取调拨单
             </summary>
@@ -319,7 +184,7 @@
             <param name="total"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotOutRecords(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotOutRecords(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Int32,System.Int32)">
             <summary>
             调拨出库单
             </summary>
@@ -333,7 +198,7 @@
             <param name="total"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotRecords(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotRecords(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Int32,System.Int32)">
             <summary>
             获取调拨单明细（出库）
             </summary>
@@ -344,10 +209,9 @@
             <param name="isChecked"></param>
             <param name="pageindex"></param>
             <param name="pagesize"></param>
-            <param name="total"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotInRecords(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAllotInRecords(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,System.Int32,System.Int32)">
             <summary>
             调拨入库单
             </summary>
@@ -390,7 +254,7 @@
             <param name="autoid"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetOutsourcingOrders(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetOutsourcingOrders(System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32)">
             <summary>
             获取委外生产产品明细单
             </summary>
@@ -401,7 +265,6 @@
             <param name="endtime"></param>
             <param name="pageindex"></param>
             <param name="pagesize"></param>
-            <param name="total"></param>
             <returns></returns>
         </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetSellOrders(System.String,System.String,System.Boolean)">
@@ -413,17 +276,17 @@
             <param name="isclose"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrders(System.String,System.String,System.String,System.String)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrder(System.String,System.String,System.String,System.String)">
             <summary>
             获取采购到货单
             </summary>
-            <param name="ordertype"></param>
-            <param name="brand"></param>
-            <param name="orderno"></param>
-            <param name="state"></param>
+            <param name="ordertype">单据类型</param>
+            <param name="brand">品牌</param>
+            <param name="orderno">单号</param>
+            <param name="state">状态</param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrders(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetPurchaseOrders(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32)">
             <summary>
             获取到货单 包含委外和采购
             </summary>
@@ -432,14 +295,14 @@
             <param name="key">单号</param>
             <param name="supplier">供应商</param>
             <param name="starttime">开始时间</param>
-            <param name="state"></param>
+            <param name="state">状态</param>
             <param name="endtime">结束时间</param>
             <param name="pageindex"></param>
             <param name="pagesize"></param>
             <param name="total"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetCheckedPOs(System.String,System.String,System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetCheckedPOs(System.String,System.String,System.Int32,System.Int32)">
             <summary>
             获取初审通过单据
             </summary>
@@ -448,7 +311,7 @@
             <param name="total"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAffirmPOs(System.String,System.String,System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetAffirmPOs(System.String,System.String,System.Int32,System.Int32)">
             <summary>
             获取客户已经确认单据
             </summary>
@@ -457,7 +320,7 @@
             <param name="total"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetDeliverPOs(System.String,System.String,System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetDeliverPOs(System.String,System.String,System.Int32,System.Int32)">
             <summary>
             获取客户已经发货单据
             </summary>
@@ -466,7 +329,7 @@
             <param name="total"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetOverPOs(System.String,System.String,System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetOverPOs(System.String,System.String,System.Int32,System.Int32)">
             <summary>
             获取客户已经发货单据
             </summary>
@@ -490,7 +353,7 @@
             <param name="departmentcode"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetMaterials(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetMaterials(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32)">
             <summary>
             获取领料单
             </summary>
@@ -529,23 +392,10 @@
             </summary>
             <param name="brand"></param>
             <param name="classcode"></param>
-            <param name="stroecode"></param>
-            <param name="key"></param>
-            <param name="pageindex"></param>
-            <param name="pagesize"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetInventory(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32@)">
-            <summary>
-            获取存货
-            </summary>
-            <param name="brand"></param>
-            <param name="classcode"></param>
             <param name="storecode"></param>
             <param name="key"></param>
             <param name="pageindex"></param>
             <param name="pagesize"></param>
-            <param name="total"></param>
             <returns></returns>
         </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.AddPuarrivalVouch(MicroFeel.Finance.Models.DbDto.DtoStockOrder)">
@@ -569,14 +419,14 @@
             <param name="order"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.AddSellOrder(MicroFeel.Finance.Models.DbDto.DtoStockOrder,System.String@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.AddSellOrder(MicroFeel.Finance.Models.DbDto.DtoStockOrder)">
             <summary>
             添加销售出库订单
             </summary>
             <param name="order"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.AddMaterialOrder(MicroFeel.Finance.Models.DbDto.DtoStockOrder,System.String@)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.AddMaterialOrder(MicroFeel.Finance.Models.DbDto.DtoStockOrder)">
             <summary>
             添加领料出库订单
             </summary>
@@ -693,6 +543,15 @@
             出入库服务接口
             </summary>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.GetDispatchBills(System.Int32,System.Int32,MicroFeel.Finance.Models.DispatchBillState)">
+            <summary>
+            获取到货单
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="billState">页状态</param>
+            <returns></returns>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IStockService.ProductIn(MicroFeel.Finance.Models.Productin)">
             <summary>
             成品入库
@@ -741,6 +600,13 @@
             销售出库
             </summary>
             <param name="saleout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.GetDispatchBillDetail(System.String)">
+            <summary>
+            获取发货单详情
+            </summary>
+            <param name="billNo"></param>
             <returns></returns>
         </member>
         <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.AddVoucher(System.Collections.Generic.IList{MicroFeel.Finance.Models.VoucherParmEntry},System.String,System.String,System.String,System.Int32,System.DateTime,System.DateTime,System.String,System.String)">
@@ -1063,6 +929,71 @@
             备注
             </summary>
         </member>
+        <member name="T:MicroFeel.Finance.Models.DbDto.DtoInventory">
+            <summary>
+            存货
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventory.ProductName">
+            <summary>
+            存货名称 
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventory.InventoryClassName">
+            <summary>
+            大类名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventory.InventoryClassCode">
+            <summary>
+            大类编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventory.UnitName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventory.MinStoreNumbers">
+            <summary>
+            最小存量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventory.MaxStoreNumbers">
+            <summary>
+            最大存量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventory.InventoryStocks">
+            <summary>
+            当前库存
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.DbDto.DtoInventoryStock">
+            <summary>
+            库存
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventoryStock.StoreCode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventoryStock.ProductBatchNo">
+            <summary>
+            /批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventoryStock.Numbers">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoInventoryStock.StoreName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
         <member name="T:MicroFeel.Finance.Models.DbDto.DtoMaterialOrder">
             <summary>
             领料单
@@ -1236,6 +1167,116 @@
         <member name="P:MicroFeel.Finance.Models.Trade.Id">
             <summary>
             订单Id
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.DispatchBill">
+            <summary>
+            发货单
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.BillNo">
+            <summary>
+            单号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.Date">
+            <summary>
+            单据日期
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.Maker">
+            <summary>
+            制单人
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.Brand">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.Customer">
+            <summary>
+            客户名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.OutNos">
+            <summary>
+            关联的出库单号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.SoBillNo">
+            <summary>
+            销售订单号
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.DispatchBillDetail">
+            <summary>
+            发货单明细
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBillDetail.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBillDetail.BillNo">
+            <summary>
+            发货单号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBillDetail.WhCode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBillDetail.WhName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBillDetail.InvCode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBillDetail.InvName">
+            <summary>
+            存货名称
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBillDetail.Batch">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBillDetail.Qty">
+            <summary>
+            未发货数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBillDetail.TotalQty">
+            <summary>
+            总发货数量
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.DispatchBillState">
+            <summary>
+            发货单状态
+            </summary>
+        </member>
+        <member name="F:MicroFeel.Finance.Models.DispatchBillState.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:MicroFeel.Finance.Models.DispatchBillState.Processing">
+            <summary>
+            待处理
+            </summary>
+        </member>
+        <member name="F:MicroFeel.Finance.Models.DispatchBillState.Checked">
+            <summary>
+            已审核
             </summary>
         </member>
         <member name="T:MicroFeel.Finance.Models.Materialout">

@@ -17,18 +17,18 @@ namespace MicroFeel.Finance.Models.DbDto
         public string ReceiveCompany { get; set; }
         public List<DtoSellOrderDetail> SellOrderDetails { get; set; }
 
-        public class DtoSellOrderDetail
-        {
-            public int Id { get; set; }
-            public string ProductName { get; set; }
-            public string ProductNumbers { get; set; }
-            public bool? IsBatchManage { get; set; }
-            public string ProductBatchNo { get; set; }
-            public decimal Numbers { get; set; }
-            public string ProcutModel { get; set; }
-            public string UnitName { get; set; }
-        }
+
     }
 
-
+    public class DtoSellOrderDetail
+    {
+        public int Id { get; set; }
+        public string ProductName { get; set; }
+        public string ProductNumbers { get; set; }
+        public bool? IsBatchManage { get; set; }
+        public string ProductBatchNo { get; set; }
+        public decimal Numbers { get; set; }
+        public string ProcutModel { get; set; }
+        public string UnitName { get; set; }
+    }
 }

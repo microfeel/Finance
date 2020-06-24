@@ -21,17 +21,17 @@ namespace MicroFeel.Finance.Models.DbDto
         public decimal Numbers { get; set; }
         public string Brand { get; set; }
         public List<DtoMaterialOrderDetail> MaterialOrderDetails { get; set; }
-        public class DtoMaterialOrderDetail
-        {
-            public int Id { get; set; }
-            public string ProductName { get; set; }
-            public string ProductNumbers { get; set; }
-            public decimal Numbers { get; set; }
-            public string UnitName { get; set; }
-            public string ProductModel { get; set; }
-            public string ProductBatch { get; set; }
-            public string StoreCode { get; set; }
-            public string StoreName { get; set; }
-        }
+    }
+    public class DtoMaterialOrderDetail
+    {
+        public int Id { get; set; }
+        public string ProductName { get; set; }
+        public string ProductNumbers { get; set; }
+        public decimal Numbers { get; set; }
+        public string UnitName { get; set; }
+        public string ProductModel { get; set; }
+        public string ProductBatch { get; set; }
+        public string StoreCode { get; set; }
+        public string StoreName { get; set; }
     }
 }
