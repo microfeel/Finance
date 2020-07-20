@@ -543,7 +543,7 @@
             出入库服务接口
             </summary>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IStockService.GetDispatchBills(System.Int32,System.Int32,MicroFeel.Finance.Models.DispatchBillState)">
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.GetDispatchBills(System.String,System.Int32,System.Int32,MicroFeel.Finance.Models.DispatchBillState)">
             <summary>
             获取到货单
             </summary>
@@ -999,6 +999,11 @@
             领料单
             </summary>
         </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoPurchaseOrder.StockOrderCode">
+            <summary>
+            入库单号
+            </summary>
+        </member>
         <member name="P:MicroFeel.Finance.Models.DbDto.DtoPurchaseOrder.PurchaseOrderNo">
             <summary>
             采购订单单号
@@ -1209,6 +1214,11 @@
             销售订单号
             </summary>
         </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.State">
+            <summary>
+            发货单状态
+            </summary>
+        </member>
         <member name="T:MicroFeel.Finance.Models.DispatchBillDetail">
             <summary>
             发货单明细
@@ -1271,12 +1281,17 @@
         </member>
         <member name="F:MicroFeel.Finance.Models.DispatchBillState.Processing">
             <summary>
-            待处理
+            待配货
             </summary>
         </member>
-        <member name="F:MicroFeel.Finance.Models.DispatchBillState.Checked">
+        <member name="F:MicroFeel.Finance.Models.DispatchBillState.Sending">
             <summary>
-            已审核
+            待发货
+            </summary>
+        </member>
+        <member name="F:MicroFeel.Finance.Models.DispatchBillState.Completed">
+            <summary>
+            已完成
             </summary>
         </member>
         <member name="T:MicroFeel.Finance.Models.Materialout">

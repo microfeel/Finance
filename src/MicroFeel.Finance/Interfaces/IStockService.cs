@@ -17,7 +17,7 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="pageSize">每页记录数</param>
         /// <param name="billState">页状态</param>
         /// <returns></returns>
-        PagedResult<DispatchBill> GetDispatchBills(int pageIndex, int pageSize, DispatchBillState billState);
+        PagedResult<DispatchBill> GetDispatchBills(string brand, int pageIndex, int pageSize, DispatchBillState billState);
 
         /// <summary>
         /// 成品入库

@@ -12,10 +12,17 @@ namespace MicroFeel.Finance
         public int TotalCount { get; set; }
         public List<T> Results { get; set; } = new List<T>();
 
-        public PagedResult(int totalCount,IEnumerable<T> source)
+        public PagedResult() { }
+
+        public PagedResult(int totalCount, IEnumerable<T> source, int pageIndex, int pageSize):this()
         {
+            PageIndex = pageIndex;
+            PageSize = pageSize;
             TotalCount = totalCount;
-            Results = source.ToList();
+            if (source != null)
+            {
+                Results = source.ToList();
+            }
         }
     }
 }

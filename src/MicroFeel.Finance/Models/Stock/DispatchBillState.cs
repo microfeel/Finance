@@ -10,12 +10,16 @@
         /// </summary>
         All = 0,
         /// <summary>
-        /// 待处理
+        /// 待配货
         /// </summary>
         Processing = 1,
         /// <summary>
-        /// 已审核
+        /// 待发货
         /// </summary>
-        Checked = 2,
+        Sending=2,
+        /// <summary>
+        /// 已完成
+        /// </summary>
+        Completed = 3,
     }
 }

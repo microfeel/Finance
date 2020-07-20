@@ -19,6 +19,10 @@ namespace MicroFeel.Finance.Models.DbDto
         public DateTime? MaxArriveDate { get; set; }
 
         public string State { get; set; }
+        /// <summary>
+        /// 入库单号
+        /// </summary>
+        public string StockOrderCode { get; set; }
 
         public List<DtoPurchaseOrderDetail> PurchaseOrderDetails { get; set; } = new List<DtoPurchaseOrderDetail>();
         /// <summary>

@@ -35,5 +35,9 @@ namespace MicroFeel.Finance.Models
         /// 销售订单号
         /// </summary>
         public string SoBillNo { get; set; }
+        /// <summary>
+        /// 发货单状态
+        /// </summary>
+        public DispatchBillState State { get; set; }
     }
 }
