@@ -414,6 +414,13 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="state"></param>
         /// <returns></returns>
         void UpdatePurchaseOrderState(string orderno, string state);
+
+        /// <summary>
+        /// 更新 cDefine14
+        /// </summary>
+        /// <param name="billNo"></param>
+        /// <param name="statusName"></param>
+        void UpdateStatusBills(string billNo, string statusName);
         #endregion
 
         #region Close
