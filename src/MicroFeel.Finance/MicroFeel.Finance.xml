@@ -478,6 +478,13 @@
             <param name="state"></param>
             <returns></returns>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.UpdateStatusBills(System.String,System.String)">
+            <summary>
+            更新 cDefine14
+            </summary>
+            <param name="billNo"></param>
+            <param name="statusName"></param>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.ClosePurarrivalOrderTransaction(System.String,System.String,System.Func{System.Boolean,System.Boolean})">
             <summary>
             关闭到货单
