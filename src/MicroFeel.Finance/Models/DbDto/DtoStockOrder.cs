@@ -12,6 +12,7 @@ namespace MicroFeel.Finance.Models.DbDto
         public IEnumerable<DtoStoreStockDetail> StoreStockDetail { get; set; }
         public string Brand { get; set; }
         public string Note { get; set; }
+        public string Maker { get; set; }
     }
 
     public class DtoStoreStockDetail

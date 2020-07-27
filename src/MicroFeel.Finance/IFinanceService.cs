@@ -6,6 +6,7 @@
 
 using MicroFeel.Finance.Interfaces;
 using MicroFeel.Finance.Models;
+using System.Collections.Generic;
 
 namespace MicroFeel.Finance
 {

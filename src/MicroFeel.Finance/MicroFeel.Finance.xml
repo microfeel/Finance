@@ -447,14 +447,14 @@
             <param name="order"></param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.FromPuArrivalVouchToStoreRecord(System.String)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.FromPuArrivalVouchToStoreRecord(System.String,System.String)">
             <summary>
             从到货单下推入库单
             </summary>
             <param name="puarrivalOrderNo">到货单号</param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.FromPuArrivalVouchToStoreRecord(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.FromPuArrivalVouchToStoreRecord(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
             <summary>
             从到货单下推入库单
             </summary>
@@ -462,7 +462,7 @@
             <param name="batchs">批号</param>
             <returns></returns>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.FromPuArrivalVouchToStoreRecord(System.String,System.String)">
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.FromPuArrivalVouchToStoreRecord(System.String,System.String,System.String)">
             <summary>
             从到货单下推入库单
             </summary>

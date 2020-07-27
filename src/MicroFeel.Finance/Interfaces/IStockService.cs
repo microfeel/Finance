@@ -74,5 +74,11 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="billNo"></param>
         /// <returns></returns>
         IList<DispatchBillDetail> GetDispatchBillDetail(string billNo);
+        /// <summary>
+        /// 获取委外订单原材料领用数据
+        /// </summary>
+        /// <param name="ommainBillNo">委外订单号</param>
+        /// <returns>原材料信用清单</returns>
+        IEnumerable<OmMaterialRecord> GetOmMaterialRecords(string ommainBillNo);
     }
 }

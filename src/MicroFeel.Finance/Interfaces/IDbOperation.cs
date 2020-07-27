@@ -209,6 +209,8 @@ namespace MicroFeel.Finance.Interfaces
         /// <returns></returns>
         List<DtoSellOrder> GetSellOrders(string brand, string orderno, bool isclose = false);
 
+        DtoPurchaseOrder GetPuArrVoucherOrder(string orderno);
+
         /// <summary>
         /// 获取采购到货单
         /// </summary>
@@ -386,7 +388,7 @@ namespace MicroFeel.Finance.Interfaces
         /// </summary>
         /// <param name="puarrivalOrderNo">到货单号</param>
         /// <returns></returns>
-        void FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo);
+        void FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo,string maker);
 
         /// <summary>
         /// 从到货单下推入库单
@@ -394,7 +396,7 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="puarrivalOrderNo">到货单号</param>
         /// <param name="batchs">批号</param>
         /// <returns></returns>
-        void FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo, Dictionary<string, string> batchs);
+        void FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo, Dictionary<string, string> batchs, string maker);
 
         /// <summary>
         /// 从到货单下推入库单
@@ -402,7 +404,7 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="puarrivalOrderNo">到货单号</param>
         /// <param name="sendOrderNo">供应商/委外工厂 发货单号</param> 
         /// <returns></returns>
-        void FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo, string sendOrderNo);
+        void FromPuArrivalVouchToStoreRecord(string puarrivalOrderNo, string sendOrderNo,string maker);
 
         #endregion
 
