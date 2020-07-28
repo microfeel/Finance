@@ -616,6 +616,13 @@
             <param name="billNo"></param>
             <returns></returns>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.GetOmMaterialRecords(System.String)">
+            <summary>
+            获取委外订单原材料领用数据
+            </summary>
+            <param name="ommainBillNo">委外订单号</param>
+            <returns>原材料信用清单</returns>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.AddVoucher(System.Collections.Generic.IList{MicroFeel.Finance.Models.VoucherParmEntry},System.String,System.String,System.String,System.Int32,System.DateTime,System.DateTime,System.String,System.String)">
             <summary>
             添加凭证
@@ -1224,6 +1231,16 @@
         <member name="P:MicroFeel.Finance.Models.DispatchBill.State">
             <summary>
             发货单状态
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.CusPerson">
+            <summary>
+            客户联系人
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.ShipAddress">
+            <summary>
+            发往地址
             </summary>
         </member>
         <member name="T:MicroFeel.Finance.Models.DispatchBillDetail">
@@ -4055,6 +4072,36 @@
         <member name="P:MicroFeel.Finance.Models.VoucherTemplate.VoucherEntryTemplates">
             <summary>
             模板明细
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.OmMaterialRecord">
+            <summary>
+            委外订单领料记录
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.OmMaterialRecord.MoDetailId">
+            <summary>
+            订单明细ID
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.OmMaterialRecord.IQuantity">
+            <summary>
+            应领数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.OmMaterialRecord.IUnitQuantity">
+            <summary>
+            单位数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.OmMaterialRecord.ISendQty">
+            <summary>
+            已领数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.OmMaterialRecord.CInvCode">
+            <summary>
+            材料编码
             </summary>
         </member>
     </members>
