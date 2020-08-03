@@ -1240,6 +1240,16 @@
             发货单状态
             </summary>
         </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.CusPerson">
+            <summary>
+            客户联系人
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.ShipAddress">
+            <summary>
+            发往地址
+            </summary>
+        </member>
         <member name="T:MicroFeel.Finance.Models.DispatchBillDetail">
             <summary>
             发货单明细

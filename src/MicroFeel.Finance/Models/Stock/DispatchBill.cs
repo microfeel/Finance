@@ -39,5 +39,14 @@ namespace MicroFeel.Finance.Models
         /// 发货单状态
         /// </summary>
         public DispatchBillState State { get; set; }
+
+        /// <summary>
+        /// 客户联系人
+        /// </summary>
+        public string CusPerson { get; set; }
+        /// <summary>
+        /// 发往地址
+        /// </summary>
+        public string ShipAddress { get; set; }
     }
 }
