@@ -80,5 +80,11 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="ommainBillNo">委外订单号</param>
         /// <returns>原材料信用清单</returns>
         IEnumerable<OmMaterialRecord> GetOmMaterialRecords(string ommainBillNo);
+        /// <summary>
+        /// 通过编号获取发货单
+        /// </summary>
+        /// <param name="billNo">发货单编号</param>
+        /// <returns></returns>
+        DispatchBill GetDispatchBillByCode(string billNo);
     }
 }
