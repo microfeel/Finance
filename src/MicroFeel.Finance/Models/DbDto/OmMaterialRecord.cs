@@ -31,5 +31,13 @@ namespace MicroFeel.Finance
         /// 材料编码
         /// </summary>
         public string CInvCode { get; set; }
+        /// <summary>
+        /// 标准用量参数
+        /// </summary>
+        public decimal FBaseQtyN { get; set; }
+        /// <summary>
+        /// 标准用量参数
+        /// </summary>
+        public decimal FBaseQtyD { get; set; }
     }
 }

@@ -4111,5 +4111,15 @@
             材料编码
             </summary>
         </member>
+        <member name="P:MicroFeel.Finance.OmMaterialRecord.FBaseQtyN">
+            <summary>
+            标准用量参数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.OmMaterialRecord.FBaseQtyD">
+            <summary>
+            标准用量参数
+            </summary>
+        </member>
     </members>
 </doc>
