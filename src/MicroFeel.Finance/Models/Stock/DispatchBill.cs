@@ -48,5 +48,21 @@ namespace MicroFeel.Finance.Models
         /// 发往地址
         /// </summary>
         public string ShipAddress { get; set; }
+        /// <summary>
+        /// 货运站
+        /// </summary>
+        public string Station { get; set; }
+        /// <summary>
+        /// 收货地址
+        /// </summary>
+        public string Address { get; set; }
+        /// <summary>
+        /// 收货人电话
+        /// </summary>
+        public string ReceiverTel { get; set; }
+        /// <summary>
+        /// 收货人
+        /// </summary>
+        public string Receiver { get; set; }
     }
 }

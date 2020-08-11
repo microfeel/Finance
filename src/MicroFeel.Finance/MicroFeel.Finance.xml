@@ -1250,6 +1250,26 @@
             发往地址
             </summary>
         </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.Station">
+            <summary>
+            货运站
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.Address">
+            <summary>
+            收货地址
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.ReceiverTel">
+            <summary>
+            收货人电话
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DispatchBill.Receiver">
+            <summary>
+            收货人
+            </summary>
+        </member>
         <member name="T:MicroFeel.Finance.Models.DispatchBillDetail">
             <summary>
             发货单明细
