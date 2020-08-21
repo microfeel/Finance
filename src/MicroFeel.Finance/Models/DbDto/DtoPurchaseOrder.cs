@@ -13,6 +13,10 @@ namespace MicroFeel.Finance.Models.DbDto
         public string OrderType { get; set; }
         public string Supplier { get; set; }
         public string SupplierCode { get; set; }
+        /// <summary>
+        /// 发货单号
+        /// </summary>
+        public string SendOrderNo { get; set; }
 
         public DateTime CreateDate { get; set; }
 

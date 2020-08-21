@@ -1020,6 +1020,11 @@
             领料单
             </summary>
         </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoPurchaseOrder.SendOrderNo">
+            <summary>
+            发货单号
+            </summary>
+        </member>
         <member name="P:MicroFeel.Finance.Models.DbDto.DtoPurchaseOrder.StockOrderCode">
             <summary>
             入库单号
