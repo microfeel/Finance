@@ -319,7 +319,13 @@ namespace MicroFeel.Finance.Interfaces
         /// </summary>
         /// <param name="productcode"></param>
         DtoInventory GetInventory(string productcode);
-
+        /// <summary>
+        /// 带批号获取存货
+        /// </summary>
+        /// <param name="productcode">存货编码</param>
+        /// <param name="batch">批号</param>
+        /// <returns></returns>
+        DtoInventory GetInventory(string productcode, string batch);
         /// <summary>
         /// 获取存货
         /// </summary>

@@ -386,6 +386,14 @@
             </summary>
             <param name="productcode"></param>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetInventory(System.String,System.String)">
+            <summary>
+            带批号获取存货
+            </summary>
+            <param name="productcode">存货编码</param>
+            <param name="batch">批号</param>
+            <returns></returns>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetInventory(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
             <summary>
             获取存货
