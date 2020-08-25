@@ -27,6 +27,10 @@ namespace MicroFeel.Finance.Models.DbDto
         /// 入库单号
         /// </summary>
         public string StockOrderCode { get; set; }
+        /// <summary>
+        /// 到货单明细概要(存货编码+规格型号)
+        /// </summary>
+        public string Content { get; set; }
 
         public List<DtoPurchaseOrderDetail> PurchaseOrderDetails { get; set; } = new List<DtoPurchaseOrderDetail>();
         /// <summary>

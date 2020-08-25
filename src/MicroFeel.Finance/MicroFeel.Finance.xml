@@ -1038,6 +1038,11 @@
             入库单号
             </summary>
         </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoPurchaseOrder.Content">
+            <summary>
+            到货单明细概要(存货编码+规格型号)
+            </summary>
+        </member>
         <member name="P:MicroFeel.Finance.Models.DbDto.DtoPurchaseOrder.PurchaseOrderNo">
             <summary>
             采购订单单号
