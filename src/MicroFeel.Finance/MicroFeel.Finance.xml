@@ -366,6 +366,16 @@
             <param name="total"></param>
             <returns></returns>
         </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetMaterials(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取领料单
+            </summary>
+            <param name="departmentcode">部门编码</param>
+            <param name="key">关键字</param>
+            <param name="pageindex">页号</param>
+            <param name="pagesize">页大小</param>
+            <returns></returns>
+        </member>
         <member name="M:MicroFeel.Finance.Interfaces.IDbOperation.GetMaterials(System.String)">
             <summary>
             获取领料单

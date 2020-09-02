@@ -304,6 +304,15 @@ namespace MicroFeel.Finance.Interfaces
         /// <summary>
         /// 获取领料单
         /// </summary>
+        /// <param name="departmentcode">部门编码</param>
+        /// <param name="key">关键字</param>
+        /// <param name="pageindex">页号</param>
+        /// <param name="pagesize">页大小</param>
+        /// <returns></returns>
+        PagedResult<DtoMaterialOrder> GetMaterials(string departmentcode, string key, int pageindex, int pagesize);
+        /// <summary>
+        /// 获取领料单
+        /// </summary>
         /// <param name="orderno"></param>
         /// <returns></returns>
         DtoMaterialOrder GetMaterials(string orderno);
