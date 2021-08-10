@@ -11,20 +11,11 @@ namespace MicroFeel.Finance.Interfaces
     /// </summary>
     public interface IOutsourcingService : IDisposable
     {
-        SingleObjectResult<Outsourcing> GetOutsourcing(string orderno, string productnumbers);
-        SingleObjectResult<Outsourcing> GetOutsourcing(string orderno);
-
         /// <summary>
-        /// 
+        /// 获取委外订单
         /// </summary>
-        /// <param name="pageindex"></param>
-        /// <param name="pagesize"></param>
-        /// <param name="wherecodition"></param>
-        /// <remarks>弃用expression该用action的原因是action更容易重新拆解和组合</remarks>
+        /// <param name="billno">订单编号</param>
         /// <returns></returns>
-        DataResult<Outsourcing> GetOutsourcings(int pageindex, int pagesize, Action<Outsourcing> wherecodition);
-
-        MessageResult UpdateOutsourcing(Outsourcing outsourcing);
-
+        OmmainDto GetOmmain(string billno);
     }
 }

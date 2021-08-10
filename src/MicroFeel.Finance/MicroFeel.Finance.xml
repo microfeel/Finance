@@ -518,14 +518,11 @@
             委外服务
             </summary>
         </member>
-        <member name="M:MicroFeel.Finance.Interfaces.IOutsourcingService.GetOutsourcings(System.Int32,System.Int32,System.Action{MicroFeel.Finance.Models.Outsourcing})">
+        <member name="M:MicroFeel.Finance.Interfaces.IOutsourcingService.GetOmmain(System.String)">
             <summary>
-            
+            获取委外订单
             </summary>
-            <param name="pageindex"></param>
-            <param name="pagesize"></param>
-            <param name="wherecodition"></param>
-            <remarks>弃用expression该用action的原因是action更容易重新拆解和组合</remarks>
+            <param name="billno">订单编号</param>
             <returns></returns>
         </member>
         <member name="T:MicroFeel.Finance.Interfaces.IPlatformService">
@@ -646,6 +643,13 @@
             通过编号获取发货单
             </summary>
             <param name="billNo">发货单编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:MicroFeel.Finance.Interfaces.IStockService.GetOmMomainDetails(System.String)">
+            <summary>
+            获取委外订单明细
+            </summary>
+            <param name="mainNo">委外订单编号</param>
             <returns></returns>
         </member>
         <member name="M:MicroFeel.Finance.Interfaces.IVoucherService.AddVoucher(System.Collections.Generic.IList{MicroFeel.Finance.Models.VoucherParmEntry},System.String,System.String,System.String,System.Int32,System.DateTime,System.DateTime,System.String,System.String)">
@@ -968,6 +972,81 @@
             备注
             </summary>
         </member>
+        <member name="T:MicroFeel.Finance.Models.DbDto.DtoBackStore">
+            <summary>
+            退料传输对象
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoBackStore.OpenId">
+            <summary>
+            微信OPENID
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoBackStore.CompanyId">
+            <summary>
+            品牌ID
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoBackStore.SourceOrderNo">
+            <summary>
+            源单号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoBackStore.Details">
+            <summary>
+            明细项
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoBackStore.Brand">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoBackStore.Note">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoBackStore.Maker">
+            <summary>
+            制单人
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.DbDto.StockDetail">
+            <summary>
+            库存明细项
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.StockDetail.InvCode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.StockDetail.Qty">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.StockDetail.BatchCode">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.StockDetail.SourceEntryId">
+             <summary>
+            源Id
+             </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.StockDetail.StoreCode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.StockDetail.AutoId">
+            <summary>
+            源出库单明细Id
+            </summary>
+        </member>
         <member name="T:MicroFeel.Finance.Models.DbDto.DtoInventory">
             <summary>
             存货
@@ -1038,6 +1117,61 @@
             领料单
             </summary>
         </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoMaterialOrderDetail.TotalSendQty">
+            <summary>
+            累计材料领料数
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoMaterialOrderDetail.AllowReturnQty">
+            <summary>
+            可退料数量
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.DbDto.DtoOutRecord">
+            <summary>
+            材料出库记录
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoOutRecord.OrderNo">
+            <summary>
+            出库单号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoOutRecord.WhCode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoOutRecord.InvCode">
+            <summary>
+            存货编码
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoOutRecord.Batch">
+            <summary>
+            批号
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoOutRecord.AutoId">
+            <summary>
+            明细ID
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoOutRecord.RQuantity">
+            <summary>
+            可退数量
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoOutRecord.SendQuantity">
+            <summary>
+            实发数据
+            </summary>
+        </member>
+        <member name="P:MicroFeel.Finance.Models.DbDto.DtoOutRecord.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
         <member name="P:MicroFeel.Finance.Models.DbDto.DtoPurchaseOrder.SendOrderNo">
             <summary>
             发货单号
@@ -1061,6 +1195,11 @@
         <member name="T:MicroFeel.Finance.Models.DbDto.DtoSupplier">
             <summary>
             供应商
+            </summary>
+        </member>
+        <member name="T:MicroFeel.Finance.Models.OmmainDto">
+            <summary>
+            委外订单DTO
             </summary>
         </member>
         <member name="T:MicroFeel.Finance.Models.Outsourcing">

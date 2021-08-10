@@ -1,4 +1,5 @@
 ﻿using MicroFeel.Finance.Models;
+using MicroFeel.Finance.Models.DbDto;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -86,5 +87,14 @@ namespace MicroFeel.Finance.Interfaces
         /// <param name="billNo">发货单编号</param>
         /// <returns></returns>
         DispatchBill GetDispatchBillByCode(string billNo);
+        void BackStore(DtoBackStore order);
+        IEnumerable<DtoOutRecord> GetOmMomainRecords(string billno, bool includeDetails);
+        void VerifyDispatchBill(string billNo, string makerName);
+        /// <summary>
+        /// 获取委外订单明细
+        /// </summary>
+        /// <param name="mainNo">委外订单编号</param>
+        /// <returns></returns>
+        List<OmModetailDto> GetOmMomainDetails(string mainNo);
     }
 }

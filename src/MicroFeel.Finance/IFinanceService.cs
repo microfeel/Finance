@@ -6,6 +6,7 @@
 
 using MicroFeel.Finance.Interfaces;
 using MicroFeel.Finance.Models;
+using MicroFeel.Finance.Models.DbDto;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
 

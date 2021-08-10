@@ -33,5 +33,13 @@ namespace MicroFeel.Finance.Models.DbDto
         public string ProductBatch { get; set; }
         public string StoreCode { get; set; }
         public string StoreName { get; set; }
+        /// <summary>
+        /// 累计材料领料数
+        /// </summary>
+        public decimal TotalSendQty { get; set; }
+        /// <summary>
+        /// 可退料数量
+        /// </summary>
+        public decimal AllowReturnQty { get; set; }
     }
 }
